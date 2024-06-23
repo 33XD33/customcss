@@ -1,6 +1,6 @@
 # betterdiscordcss
 
-If anything stops working contact me and ill try get it fixed asap
+ill update when i can.
 
 themes
 https://github.com/MiniDiscordThemes/Squared
