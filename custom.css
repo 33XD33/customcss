@@ -27,13 +27,33 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
 
 
 /* Remove Top Left Discord Icon */
-.wordmark_a934d8{pointer-events:unset;padding:0}.wordmark_a934d8>svg{display:none}
-.wordmark_a934d8::after{position:absolute;top:4px;padding:4px 9px 3px;font-size:9px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}:root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
+.wordmark_a934d8{pointer-events:unset;padding:0}
+.wordmark_a934d8>svg{display:none}
+.wordmark_a934d8::after{position:absolute;top:4px;padding:4px 9px 3px;font-size:9px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
+:root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
 
 :root {
     --modtitle-text: "" !important;
 }
 
+Backup
+/* Remove SVG Icon [home] */
+[class*=childWrapper]>svg:not([class*=favoriteIcon]) {
+  display: var(--discord-icon);
+
+}
+
+[class*=childWrapper]:has(svg:not([class*=favoriteIcon]))::before {
+  content: '';
+  display: var(--home-icon) !important;
+  position: absolute;
+  width: 85%;
+  height: 85%;
+  background: var(--home-icon-url) center/contain no-repeat;
+}
+.childWrapper_f90abb.childWrapperNoHoverBg_f90abb {
+  background-color: transparent !important;
+}
 
 /* Hover Left Side */
 [class*="guilds_"] {
@@ -46,7 +66,6 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     width: 65px;
     opacity: 1;
 }
-
 
 /* Custom Discord icon using image */
 :root{
@@ -106,18 +125,6 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     --brand-830-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 10));
     --brand-860-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 11));
     --brand-900-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 12));
-
-
-/* BetterDiscord at the top */
-.bd-sidebar-header, 
-.bd-settings-tab, 
-.bd-customcss-tab,
-.bd-plugins-tab,
-.bd-themes-tab, 
-.bd-updates-tab,
-[class^=bd-] + [class^=separator]{
-    order: -1;
-}
 
 
 /* Discord Call Top Left */
@@ -252,7 +259,6 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     margin-top: 60px;
 }
 
-
 /*BetterDiscord top fix*/
 .BDFDB_undefined_1focKH,
 .noticeWrapper_8z511t,
@@ -304,7 +310,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
   opacity: 1!important;
   transform: none;
 }
-
 
 /* Hovering Mute, Deafen and Settings Buttors */
 .container_b2ca13 .hovered_c0d6c6, .hoverRoll_c0d6c6.forceHover_c0d6c6:not(.disabled_c0d6c6) .default_c0d6c6{
@@ -696,4 +701,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .channel_c91bad:hover {
     margin-left: 18px;
 }
+
+
 
