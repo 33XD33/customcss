@@ -312,14 +312,25 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* remove small dots and reply arrow*/
+/* Remove Small Dots and Reply Arrow*/
 .buttons_d5deea {
  display: none;
 }
 
 
-/* remove share screen stuff*/
+/* Remove Share Screen Left*/
 .actionButtons_adcaac {
+ display: none;
+}
+
+/* Friends Home Screen*/
+.avatarWithText_c91bad {
+ display: none;
+}
+
+
+/* Search Convo*/
+.searchBar_f0963d {
  display: none;
 }
 
