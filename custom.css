@@ -18,6 +18,34 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
     animation: spin 0.8s ease;
 }
 
+
+/* Custom Discord icon using image */
+:root{
+--discord-icon: none; /* discord icon */
+--home-icon: block; /* moon icon */
+--home-icon-url: url('https://i.imgur.com/ikWwyPd.png');
+}
+
+[class*=childWrapper] > svg:not([class*=favoriteIcon]){
+  display: var(--discord-icon);
+}
+[class*=childWrapper]:has(svg:not([class*=favoriteIcon]))::before {
+    content: '';
+    display: var(--home-icon);
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    background: var(--text-normal);
+    mask-image: var(--home-icon-url) center/contain no-repeat !important;
+    mask: var(--home-icon-url) center/contain no-repeat !important;
+}
+
+.form_a7d72e::after {
+  display: none;
+}
+
+
+
 /* Disable Join Server and Discovery Icon */
 div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
 div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
@@ -68,49 +96,27 @@ Backup
 
 
 /* Custom Discord icon using image */
-:root{
---discord-icon: none; /* discord icon */
---home-icon: block; /* moon icon */
---home-icon-url: url('https://i.imgur.com/ikWwyPd.png');
-}
-
-[class*=childWrapper] > svg:not([class*=favoriteIcon]){
-  display: var(--discord-icon);
-}
-[class*=childWrapper]:has(svg:not([class*=favoriteIcon]))::before {
-    content: '';
-    display: var(--home-icon);
-    position: absolute;
-    width: 80%;
-    height: 80%;
-    background: var(--text-normal);
-    mask-image: var(--home-icon-url) center/contain no-repeat !important;
-    mask: var(--home-icon-url) center/contain no-repeat !important;
-}
-
-.form_a7d72e::after {
-  display: none;
-}
-
-
-/* Little Guy Gif */
 :root {
-     --background-image: url("https://i.gifer.com/ZHDd.gif"); /* Change image here */
-     --size: 120%;  /* Change Image size here */
+     --background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG50dXN2dW0ycWt5eWFraHRuNXRoYm8yZmw3c3NuZ2NzOGhvMTZleCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wTpkLqAZf3NFcgzQ4J/giphy.webp"); /* Change image here */
+     --size: 75px;  /* Change Image size here */
      --align: right; /* Change alignment here */
 }
 
 main[class^="chatContent_"] form[class^="form_"]::before {
-     background-image: var(--background-image) !important;
-     background-size: contain !important; 
-     background-position:  var(--align) !important;
-     background-repeat: no-repeat !important;
-     margin-left: 2%;
-     margin-right: 1%;
-     height: var(--size);
-     top: calc(var(--size) - var(--size) - var(--size));
-     pointer-events: none;
+    background-image: var(--background-image) !important;
+    background-size: contain !important; 
+    background-position:  var(--align) !important;
+    background-repeat: no-repeat !important;
+    transform: scaleX(1);
+    margin-left: 2%;
+    margin-right: 2%;
+    height: var(--size);
+    max-height: var(--size);
+    top: calc(var(--size) - var(--size) - var(--size));
+    pointer-events: none;
 }
+
+
 
 /* Main icons Transparent :hover */
 :root:root {
