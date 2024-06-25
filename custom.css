@@ -93,7 +93,7 @@ Backup
 }
 
 
-/* Settings */
+/* Little Guy Gif */
 :root {
      --background-image: url("https://i.gifer.com/ZHDd.gif"); /* Change image here */
      --size: 120%;  /* Change Image size here */
@@ -279,21 +279,20 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-/*BetterDiscord top fix*/
-.BDFDB_undefined_1focKH,
-.noticeWrapper_8z511t,
-.updateNotice_2DjjHs,
-.BDFDB_undefined_mW0jTt
-.actionButtons_adcaac {
-    display: none;
+/* Read All Lowercase */
+button[class^="vc-ranb"] div[class^="contents_"] {
+    visibility: hidden;
 }
 
-
-/* BD-Only Context Menu */
-[role="menu"]#user-settings-cog > .scroller_d90b3d > :not([role="group"],:has(#user-settings-cog-BetterDiscord)) {
-    display:none;
+button[class^="vc-ranb"] div[class^="contents_"]::after {
+    content: "read all";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    padding: 5px;
+    top: -5px;
+    right: 50;
 }
-
 
 
 /*Support icon in toolbar*/
@@ -379,6 +378,3 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .channel_c91bad:hover {
     margin-left: 18px;
 }
-
-
-
