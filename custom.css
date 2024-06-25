@@ -323,12 +323,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
  display: none;
 }
 
-/* Friends Home Screen*/
-.avatarWithText_c91bad {
- display: none;
-}
-
-
 /* Search Convo*/
 .searchBar_f0963d {
  display: none;
