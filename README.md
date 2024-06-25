@@ -1,4 +1,4 @@
-# betterdiscordcss
+# discord css revcord
 
 ill update when i can.
 
