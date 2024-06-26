@@ -295,7 +295,8 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
     visibility: visible;
     display: block;
     position: absolute;
-    padding: 5px;
+    font-size: 12px;
+    padding: 10px;
     top: -5px;
     right: 50;
 }
