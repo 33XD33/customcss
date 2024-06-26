@@ -387,5 +387,27 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 .container_e9f61e:hover,
 .channel_c91bad:hover {
+
+
+  /* Friends to Home */
+[href="/channels/@me"] {
+  visibility: hidden;
+  position: relative;
+}
+
+.linkButtonIcon_c91bad:has(path[d^="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56"]) {
+  visibility: hidden !important;
+}
+
+[href="/channels/@me"]::after {
+  content: "Home";
+  line-height: 20px;
+  font-weight: 500;
+  font-size: 16px; 
+  /*color:  black */
+  visibility: visible;
+  position: absolute;
+  left: 90px;
+}
     margin-left: 18px;
 }
