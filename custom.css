@@ -291,16 +291,15 @@ button[class^="vc-ranb"] div[class^="contents_"] {
 }
 
 button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "read all";
+    content: "𓆩✧𓆪";
     visibility: visible;
     display: block;
     position: absolute;
-    font-size: 12px;
+    font-size: 18px;
     padding: 10px;
-    top: -5px;
-    right: 50;
+    top: -10px;
+    right: 3px;
 }
-
 
 /*Support icon in toolbar*/
 .toolbar_e44302 .anchor_af404b[href="https://support.discord.com"],
@@ -390,25 +389,23 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .channel_c91bad:hover {
 
 
-  /* Friends to Home */
+/* Friends to Home */
 [href="/channels/@me"] {
   visibility: hidden;
   position: relative;
 }
 
 .linkButtonIcon_c91bad:has(path[d^="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56"]) {
-  visibility: hidden !important;
+  visibility: visable !important;
 }
 
 [href="/channels/@me"]::after {
-  content: "Home";
+  content: "⋆༺𓆩☠︎︎𓆪༻⋆";
   line-height: 20px;
   font-weight: 500;
-  font-size: 16px; 
+  font-size: 24px; 
   /*color:  black */
   visibility: visible;
   position: absolute;
-  left: 90px;
-}
-    margin-left: 18px;
+  left: 50px;
 }
