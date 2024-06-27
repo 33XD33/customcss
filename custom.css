@@ -45,7 +45,6 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
 }
 
 
-
 /* Disable Join Server and Discovery Icon */
 div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
 div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
@@ -117,7 +116,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-
 /* Main icons Transparent :hover */
 :root:root {
     --accent-h: 235;
@@ -185,7 +183,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     min-width: unset;
     border-radius: 50px;
     background: var(--nitro-overlay,var(--background-primary));
-    padding: 0;
+    padding: 9;
     margin: 0;
     flex: 0 0 48px;
     transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
@@ -204,7 +202,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .container_b2ca13 .avatarWrapper_b2ca13[aria-expanded="true"],
 .container_b2ca13 .flex_bba380 > .button_f67531:hover {
     background: var(--brand-500);
-    border-radius: 16px;
+    border-radius: 20px;
 }
 .content_a7d72e,
 .chatContent_a7d72e,
@@ -234,14 +232,14 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .actionButtons_adcaac {
     display: flex;
     gap: 12px;
-    padding-top: 0;
+    padding-top: 12px;
     padding-right: 12px;
 }
 .actionButtons_adcaac .button_adcaac {
     --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
     width: 48px;
     height: 48px;
-    padding: 0;
+    padding: 12;
     border-radius: 50px;
     flex: 0 0 48px;
     background: var(--nitro-overlay,var(--background-primary));
@@ -259,16 +257,16 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 .peopleColumn_c2739c .inner__999f6 {
     height: 60px;
-    padding: 0;
+    padding: 16;
 }
 .nowPlayingColumn_c2739c .scroller_bf550a {
-    margin: 0;
+    margin: 10;
     overflow: hidden overlay !important;
     padding-right: 16px !important;
     border: none;
 }
 .nowPlayingColumn_c2739c .header_bf550a {
-    margin: 0;
+    margin: 21;
     width: calc(100% + 32px);
     margin-left: -16px;
     margin-top: -16px;
@@ -290,6 +288,7 @@ button[class^="vc-ranb"] div[class^="contents_"] {
     visibility: hidden;
 }
 
+
 button[class^="vc-ranb"] div[class^="contents_"]::after {
     content: "𓆩✧𓆪";
     visibility: visible;
@@ -298,8 +297,9 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
     font-size: 18px;
     padding: 10px;
     top: -10px;
-    right: 3px;
+    right: 3.5px;
 }
+
 
 /*Support icon in toolbar*/
 .toolbar_e44302 .anchor_af404b[href="https://support.discord.com"],
@@ -309,6 +309,12 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
 path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5"],
 /*enable camera in dm*/
 path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none; 
+}
+
+
+/* Activty Button*/
+.buttonContainer_b6e2f9 {
+  display: none;
 }
 
 
@@ -328,6 +334,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .actionButtons_adcaac {
  display: none;
 }
+
 
 /* Search Convo*/
 .searchBar_f0963d {
@@ -351,26 +358,26 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
   content: "@";
 }
 .default_c0d6c6{
-  margin-top: 15px;
+  margin-top: 0px;
 }
 .panels_a4d4d9 > .container_b2ca13 .flex_bba380 > * {
   opacity: 0% !important;
-  width: 0px;
+  width: 10px;
   transition: all 0.1s ease-in-out;
 }
 .panels_a4d4d9 > .container_b2ca13:hover .flex_bba380 > * {
   opacity: 100% !important;
-  width: 55px;
+  width: 45px;
 }
 .avatarWrapper_b2ca13{
   transition: all 0.1s ease-in-out;
   width: 100%!important;
   margin-left: -10px;
-  height: 60px;
+  height: 0px;
   border-radius: 0!important;
 }
 .avatarWrapper_b2ca13 .avatar_b2ca13{
-  margin-left: 10px;
+  margin-left: 0dvh;
 }
 
 
@@ -410,4 +417,10 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
   visibility: visible;
   position: absolute;
   left: 50px;
+}
+
+
+/* Hide Noise Suppression Icon In Call*/
+.button_f67531:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
+  display: none
 }
