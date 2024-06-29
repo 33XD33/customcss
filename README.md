@@ -1,4 +1,4 @@
-# discord css revcord (working)
+# discord/betterdiscord css revcord (working)
 
 I update my .css all the time, if you want the most updated put the import link below
 
