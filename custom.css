@@ -97,7 +97,7 @@ Backup
 /* Custom Discord icon using image */
 :root {
      --background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG50dXN2dW0ycWt5eWFraHRuNXRoYm8yZmw3c3NuZ2NzOGhvMTZleCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wTpkLqAZf3NFcgzQ4J/giphy.webp"); /* Change image here */
-     --size: 75px;  /* Change Image size here */
+     --size: 100px;  /* Change Image size here */
      --align: right; /* Change alignment here */
 }
 
@@ -283,7 +283,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-/* Read All Lowercase */
+/* Read All Text Editor */
 button[class^="vc-ranb"] div[class^="contents_"] {
     visibility: hidden;
 }
@@ -312,13 +312,13 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Activty Button*/
+/* Remove Activty Button*/
 .buttonContainer_b6e2f9 {
   display: none;
 }
 
 
-/* Server Boost/Level */
+/* Remove Server Boost/Level */
 .container_c75f85 {
   display: none;
 }
@@ -336,7 +336,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Search Convo*/
+/* Remove Search Convo*/
 .searchBar_f0963d {
  display: none;
 }
@@ -348,6 +348,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
   opacity: 1!important;
   transform: none;
 }
+
 
 /* Hovering Mute, Deafen and Settings Buttors */
 .container_b2ca13 .hovered_c0d6c6, .hoverRoll_c0d6c6.forceHover_c0d6c6:not(.disabled_c0d6c6) .default_c0d6c6{
@@ -381,23 +382,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Hover Left Animations */
-.wrapper_d8bfb3 .link_d8bfb3 /* channels */,
-.container_e9f61e /* members */,
-.channel_c91bad /* dms */,
-.side_a0 .item_a0 /* settings */ {
-    transition: margin-left 0.2s ease;
-}
-.wrapper_d8bfb3:hover .link_d8bfb3,
-.side_a0 .item_a0:hover {
-    margin-left: 10px;
-}
-.container_e9f61e:hover,
-.channel_c91bad:hover {
-    margin-left: 18px;
-}
-
-
 /* Friends to Home */
 [href="/channels/@me"] {
   visibility: hidden;
@@ -409,10 +393,10 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 [href="/channels/@me"]::after {
-  content: "⋆༺𓆩☠︎︎𓆪༻⋆";
+  content: "·:*¨༺ ♱☣︎♱ ༻¨*:·";
   line-height: 20px;
   font-weight: 500;
-  font-size: 24px; 
+  font-size: 18px; 
   /*color:  black */
   visibility: visible;
   position: absolute;
@@ -423,4 +407,13 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 /* Hide Noise Suppression Icon In Call*/
 .button_f67531:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
   display: none
+}
+
+
+/* User Area Icon Recolor */
+.panels_a4d4d9 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
+  fill: white;
+}
+.lottieIcon_f73ef7 > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
+  stroke: white;
 }
