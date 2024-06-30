@@ -417,3 +417,9 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .lottieIcon_f73ef7 > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
   stroke: white;
 }
+
+
+/* Remove Popout */
+.popoutWrapper_d201be.mounted_d201be, .container_e88961{
+    display: none;
+}
