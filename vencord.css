@@ -182,7 +182,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .container_b2ca13 .avatarWrapper_b2ca13[aria-expanded="true"],
 .container_b2ca13 .flex_bba380 > .button_f67531:hover {
     background: var(--brand-500);
-    border-radius: 20px;
+    border-radius: 0px;
 }
 .content_a7d72e,
 .chatContent_a7d72e,
@@ -191,7 +191,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .header_fd6364,
 .animatedContainer_fd6364,
 .privateChannels_f0963d {
-    border-top-left-radius: 8px;
+    border-top-left-radius: px;
 }
 .content_a7d72e:before {
     content: none;
@@ -206,8 +206,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .container_adcaac {
     border-bottom: none;
     background: var(--bg-overlay-app-frame,var(--background-tertiary)) !important;
-    padding: 0;
-    padding-bottom: 4px;
+    padding: 2px;
+    padding-bottom: 0.1px;
 }
 .actionButtons_adcaac {
     display: flex;
