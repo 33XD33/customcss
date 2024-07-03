@@ -499,3 +499,69 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 /* Search Bar Compact */
 .search_ff5f90{order:var(--search-order, 1)}.search_ff5f90 .searchBar_a46bef{background:rgba(0,0,0,0)}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)){width:24px}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)) .iconContainer_effbe2{width:24px;height:24px;cursor:pointer}
+
+/* Search Bar Compact */
+.search_ff5f90{order:var(--search-order, 1)}.search_ff5f90 .searchBar_a46bef{background:rgba(0,0,0,0)}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)){width:24px}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)) .iconContainer_effbe2{width:24px;height:24px;cursor:pointer}
+
+
+/* Remove Notes from Profiles (New Look)*/
+[aria-label="Add Note"] {
+  display: none;
+}
+[class^=section_]:has([class^=note_]) {
+  display: none;
+}
+
+
+/**
+* @name AlignedChatBox
+* @author CodeF53
+* @version 3.0
+* @description Aligns chat box with the bottom of the screen and user controls
+*/
+:is(main,section)[class^=chatContent] > form,
+form > div[class^=submitContainer] {
+  /* align chatbox */
+  padding: 0px;
+  > div > div[class^=channelTextArea] {
+    margin: 0px !important;
+    > div[class^=scrollableContainer] {
+      min-height: 49px;
+      padding-top: 4px;
+      border-radius: 0px;
+    }
+  }
+  /* align forum channel thing */
+  > div { margin-bottom: 0px; border-radius: 0px; }
+  
+  /* move slowmode/typing indicator to match */
+  > div[class^=typing] {
+    top: -24px;
+    right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
+    margin-left: auto;
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 9px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--channeltextarea-background);
+  }
+  /* make scrollbar meet chatbox */
+  &::after { display: none; }
+
+  /* fix replies */
+  > div > div > div[class^=attachedBars] {
+    min-height: unset !important;
+    padding-bottom: 4px;
+  }
+}
+
+/* jump to present */
+div[class^=jumpToPresentBar] {
+  left: 0; right: unset;
+  border-radius: 0px 8px 0px 0px;
+  background-color: var(--channeltextarea-background);
+  > button[class^=barButtonMain] {
+    flex: 0 0 auto;
+    display: none;
+  }
+}
