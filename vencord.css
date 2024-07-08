@@ -13,7 +13,7 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
 
 /*turns all messages into rainbow coloring*/
 .markup_f8f345 {
-  animation: colorRotate 6s linear 0s infinite;
+  animation: colorRotate 5s linear 0s infinite;
 }
 
 @keyframes colorRotate {
@@ -65,6 +65,7 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
 div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
 div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
 {display: none !important;}
+
 
 
 /* Remove Top Left Discord Icon */
@@ -152,7 +153,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --brand-830-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 10));
     --brand-860-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 11));
     --brand-900-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 12));
-
+}
 
 /* Discord Call Top Left */
 .panels_a4d4d9 {
@@ -162,9 +163,9 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     background: var(--bg-overlay-app-frame,var(--background-tertiary)) !important;
     justify-content: space-between;
     padding: 0px;
-    padding-bottom: 0px;
-    gap: 8px;
-    margin: 2px;
+    padding-bottom: 6px;
+    gap: 4px;
+    margin: 4px;
     height: fit-content;
     padding-top: 6px;
 }
@@ -436,7 +437,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .expandedFolderIconWrapper_bc7085::after,
 .closedFolderIconWrapper_bc7085::after {
     content: "⟢";
-    background-color: #fff;
+    background-color: #ffffff;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -447,7 +448,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
     filter: blur(2px);
 }
 .theme-dark .folder_bc7085[aria-expanded="false"] {
-    background-color: #474747;
+    background-color: #000000;
 }
 .theme-light .folder_bc7085[aria-expanded="false"] {
     background-color: #747474;
@@ -524,9 +525,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 /* Search Bar Compact */
 .search_ff5f90{order:var(--search-order, 1)}.search_ff5f90 .searchBar_a46bef{background:rgba(0,0,0,0)}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)){width:24px}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)) .iconContainer_effbe2{width:24px;height:24px;cursor:pointer}
 
-/* Search Bar Compact */
-.search_ff5f90{order:var(--search-order, 1)}.search_ff5f90 .searchBar_a46bef{background:rgba(0,0,0,0)}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)){width:24px}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)) .iconContainer_effbe2{width:24px;height:24px;cursor:pointer}
-
 
 /* Remove Notes from Profiles (New Look)*/
 [aria-label="Add Note"] {
@@ -579,6 +577,7 @@ form > div[class^=submitContainer] {
   }
 }
 
+
 /* jump to present */
 div[class^=jumpToPresentBar] {
   left: 0; right: unset;
@@ -588,4 +587,32 @@ div[class^=jumpToPresentBar] {
     flex: 0 0 auto;
     display: none;
   }
+}
+
+
+/* Hide Stuff */
+[aria-label="Threads"],
+[aria-label="Notification Settings"],
+[aria-label="Hide Member List"],
+[aria-label="Inbox"],
+[aria-label="Help"] {
+  display: none
+}
+
+
+ .voiceUser_cdc675 .live_e17fae {
+    scale: .8;
+ } 
+
+
+/* Hide Server Banner*/
+ .animatedContainer_fd6364,
+.content_eed6a8 [style="height: 84px;"]{
+    display: none
+}
+
+
+/* Flip Camera*/
+.mirror_eb1d8c {
+    transform: scaleX(1);
 }
