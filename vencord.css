@@ -302,10 +302,10 @@ div[class^=jumpToPresentBar] {
     filter: blur(2px);
 }
 .theme-dark .folder_bc7085[aria-expanded="false"] {
-    background-color: #24003b1a;
+    background-color: #ffffff11;
 }
 .theme-light .folder_bc7085[aria-expanded="false"] {
-    background-color: #d1d1d13a;
+    background-color: #000000;
 }
 
 
@@ -331,11 +331,45 @@ div[class^=jumpToPresentBar] {
 }
 
 
+/* Custom Discord icon using image */
+:root {
+     --background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG50dXN2dW0ycWt5eWFraHRuNXRoYm8yZmw3c3NuZ2NzOGhvMTZleCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wTpkLqAZf3NFcgzQ4J/giphy.webp"); /* Change image here */
+     --size: 100px;  /* Change Image size here */
+     --align: right; /* Change alignment here */
+}
+
+main[class^="chatContent_"] form[class^="form_"]::before {
+    background-image: var(--background-image) !important;
+    background-size: contain !important; 
+    background-position:  var(--align) !important;
+    background-repeat: no-repeat !important;
+    transform: scaleX(1);
+    margin-left: 2%;
+    margin-right: 2%;
+    height: var(--size);
+    max-height: var(--size);
+    top: calc(var(--size) - var(--size) - var(--size));
+    pointer-events: none;
+}
 
 
+/* Hide Server Banner */
+ .animatedContainer_fd6364,
+.content_eed6a8 [style="height: 84px;"]{
+    display: none
+}
 
 
+/* Hide Sticker */
+:root {
+  --sticker: flex;
+}
 
+[class*=form-] [class*=button_][aria-label="Open sticker picker"] {
+  display: var(--sticker);
+}
 
-
-
+:root {
+    /* Chat Area */
+    --sticker: none; 
+}
