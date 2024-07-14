@@ -1,3 +1,8 @@
+/* Themes */
+@import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/clients/amoled-cord.theme.css");
+@import url("https://raw.githubusercontent.com/MiniDiscordThemes/Squared/main/Squared.theme.css");
+
+
 /* GIF Button */
 button:has([d^=" M-7,-10 C-8.656999588012695,-10 -10"]),
 /* Gift Button */
@@ -9,6 +14,7 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
   display: none!important;
 
 }
+
 
 /* Custom Discord icon using image */
 :root{
@@ -373,3 +379,5 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     /* Chat Area */
     --sticker: none; 
 }
+
+
