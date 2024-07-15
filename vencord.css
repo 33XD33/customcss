@@ -93,7 +93,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
 }
 
 
-/* Discord Call Top Left */
+/* Discord Call Simple */
 .container_b2ca13 {
     background: var(--bg-overlay-app-frame,var(--background-tertiary)) !important;
     justify-content: space-between;
@@ -102,13 +102,13 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     gap: 4px;
     margin: 4px;
     height: fit-content;
-    padding-top: 6px;
+    padding-top: 0px;
 }
 .container_b2ca13 .flex_bba380 > .button_f67531 {
     --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
     width: 48px;
-    height: 48px;
-    border-radius: 50px;
+    height: 35px;
+    border-radius: 0-px;
     background: var(--nitro-overlay,var(--background-primary));
     transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
 }
@@ -121,7 +121,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     background: var(--nitro-overlay,var(--background-primary));
     padding: 0px;
     margin: 0;
-    flex: 0 0 48px;
+    flex: 0 0 40px;
     transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
     justify-content: center;
     cursor: pointer;
@@ -129,7 +129,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
 .container_b2ca13 .flex_bba380 {
     justify-content: space-between;
     width: 100%;
-    padding-right: 8px;
+    padding-right: 4px;
 }
 .container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
     display: none;
@@ -379,5 +379,4 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     /* Chat Area */
     --sticker: none; 
 }
-
 
