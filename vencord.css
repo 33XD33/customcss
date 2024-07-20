@@ -380,3 +380,34 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --sticker: none; 
 }
 
+
+/* Reactions Hover */
+[class^=reaction_]:not(:has(.burstGlow_ec6b19)) .emoji {
+  transition: transform 0.5s ease;
+}
+[class^=reaction_]:not(:has(.burstGlow_ec6b19)):hover .emoji {
+  transform: translateY(-10px) scale(1.5);
+}
+
+
+textarea.textArea_d0696b::placeholder {
+  opacity: 0;
+}
+textarea.textArea_d0696b:placeholder-shown {
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</text></svg>");
+  background-repeat: no-repeat;
+}
+
+
+/* Call Icon Buttons */
+.wrapper_b6e2f9 button{
+    background-color: rgba(61, 61, 61, 0.685) !important; 
+}
+.wrapper_b6e2f9 div foreignObject  {
+    mask-image:none;
+}
+.wrapper_b6e2f9 .contextMenuNub_ef18ee{
+    display:none;
+}
+
+
