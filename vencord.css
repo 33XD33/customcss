@@ -100,9 +100,9 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     padding: 0px;
     padding-bottom: 6px;
     gap: 4px;
-    margin: 4px;
+    margin: 3px;
     height: fit-content;
-    padding-top: 0px;
+    padding-top: 2px;
 }
 .container_b2ca13 .flex_bba380 > .button_f67531 {
     --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
@@ -129,7 +129,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
 .container_b2ca13 .flex_bba380 {
     justify-content: space-between;
     width: 100%;
-    padding-right: 4px;
+    padding-right: 0px;
 }
 .container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
     display: none;
@@ -154,9 +154,9 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
 
 
 /*Support icon in toolbar*/
-.toolbar_e44302 .anchor_af404b[href="https://support.discord.com"],
+.toolbar_fc4f04 .anchor_af404b[href="https://support.discord.com"],
 /* Bell icon/notification settings*/
-.iconWrapper_e44302:has(path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"],
+.iconWrapper_fc4f04:has(path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"],
 /*Add friends to dm*/
 path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5"],
 /*enable camera in dm*/
@@ -339,7 +339,7 @@ div[class^=jumpToPresentBar] {
 
 /* Custom Discord icon using image */
 :root {
-     --background-image: url("https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExeG50dXN2dW0ycWt5eWFraHRuNXRoYm8yZmw3c3NuZ2NzOGhvMTZleCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/wTpkLqAZf3NFcgzQ4J/giphy.webp"); /* Change image here */
+     --background-image: url("https://media.giphy.com/media/jn4N059jwA2UE/giphy.gif?cid=ecf05e47d87b5vn4fhm8g91p2n8p4x9b0pnnvtyi9h4019pf&ep=v1_gifs_search&rid=giphy.gif&ct=s"); /* Change image here */
      --size: 100px;  /* Change Image size here */
      --align: right; /* Change alignment here */
 }
@@ -350,8 +350,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     background-position:  var(--align) !important;
     background-repeat: no-repeat !important;
     transform: scaleX(1);
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
     height: var(--size);
     max-height: var(--size);
     top: calc(var(--size) - var(--size) - var(--size));
@@ -411,3 +411,16 @@ textarea.textArea_d0696b:placeholder-shown {
 }
 
 
+/*i'm new here, say hi!*/
+[class*=newMemberBadge]:before {
+    content: url(https://media.tenor.com/4-O1JlNIlpsAAAAi/small-amogus.gif);
+    transform: translate(20%, 20%);
+    display: inline-block;
+    scale: 1.1;
+}
+
+
+/* Hide Avatar Decoration */
+[class*=avatardecoration i]{
+    display: none;
+}
