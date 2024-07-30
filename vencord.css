@@ -2,7 +2,6 @@
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/clients/amoled-cord.theme.css");
 @import url("https://raw.githubusercontent.com/MiniDiscordThemes/Squared/main/Squared.theme.css");
 
-
 /* GIF Button */
 button:has([d^=" M-7,-10 C-8.656999588012695,-10 -10"]),
 /* Gift Button */
@@ -12,7 +11,6 @@ li:has([d^="M7 4a1 1 0 0 0 0 2h3a1 1 0 1 1 0 2H5.5a1"]),
 /* Shop Button */
 li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
   display: none!important;
-
 }
 
 
@@ -275,6 +273,7 @@ div[class^=jumpToPresentBar] {
   }
 }
 
+
 /* Hide Noise Suppression Icon In Call*/
 .button_f67531:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
   display: none
@@ -383,10 +382,21 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 /* Reactions Hover */
 [class^=reaction_]:not(:has(.burstGlow_ec6b19)) .emoji {
-  transition: transform 0.5s ease;
+    transition: transform 0.6s ease;
+    transform-style: preserve-3d; /* Enables 3D transformations */
 }
+
 [class^=reaction_]:not(:has(.burstGlow_ec6b19)):hover .emoji {
-  transform: translateY(-10px) scale(1.5);
+    animation: flipAndScale 0.6s forwards;
+}
+
+@keyframes flipAndScale {
+    from {
+        transform: rotateY(0deg) scale(1);
+    }
+    to {
+        transform: rotateY(360deg) scale(1.5);
+    }
 }
 
 
