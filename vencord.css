@@ -434,3 +434,8 @@ textarea.textArea_d0696b:placeholder-shown {
 [class*=avatardecoration i]{
     display: none;
 }
+
+/* Change voice activity indicator glow color */
+.theme-dark [class*=avatarSpeaking_] {
+    box-shadow: 0 0 0 2px #ff0000; /* Change #color to your desired border color */
+}
