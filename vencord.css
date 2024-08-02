@@ -439,3 +439,41 @@ textarea.textArea_d0696b:placeholder-shown {
 .theme-dark [class*=avatarSpeaking_] {
     box-shadow: 0 0 0 2px #ff0000; /* Change #color to your desired border color */
 }
+
+
+/*Shake animation hover to the text area when you don't have permission !*/
+
+/* Define the shake animation */
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-10px); }
+  40%, 80% { transform: translateX(10px); }
+}
+
+
+/* Initial state of the element */
+[class*=channelTextAreaDisabled] {
+  position: relative;
+  transition: transform 0.5s, opacity 0.5s;
+}
+
+
+/* Hover state to trigger the shake animation */
+[class*=channelTextAreaDisabled]:hover {
+  animation: shake 0.5s ease-in-out;
+}
+
+/* Server shortcuts as Icons */
+.basicChannelRowLink_d8bfb3 .name_d8bfb3{
+  display: none;
+}
+li:not([class]):has(.basicChannelRowLink_d8bfb3),
+div:not([class]):has(.basicChannelRowLink_d8bfb3) {
+    width: min-content;
+    display: inline-flex;
+}
+.basicChannelRowLink_d8bfb3 .icon_d8bfb3{
+  margin-left: 0px;
+  margin-top: 0px;
+  scale: 1;
+}
