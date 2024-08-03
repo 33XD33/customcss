@@ -423,10 +423,10 @@ textarea.textArea_d0696b:placeholder-shown {
 
 /*i'm new here, say hi!*/
 [class*=newMemberBadge]:before {
-    content: url(https://media.tenor.com/4-O1JlNIlpsAAAAi/small-amogus.gif);
-    transform: translate(20%, 20%);
+    content: url(https://opengameart.org/sites/default/files/kaczuha_1.gif);
+    transform: translate(-100%, -110%);
     display: inline-block;
-    scale: 1.1;
+    scale: 0.32;
 }
 
 
@@ -477,3 +477,25 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
   margin-top: 0px;
   scale: 1;
 }
+
+
+/* Minimal Quests */
+[class^=questsListContainer_] [class^=questsCard_]:has([class^=outerContainer_][aria-hidden=false]) {
+  max-height: 115px!important;
+  transition: max-height 1s, box-shadow 1s;
+
+  &:hover {
+    max-height: 323px!important;
+    box-shadow: 0px 0px 0px;
+  }
+}
+/* Blue highlight on Quest card when Quest is in progress */
+[class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):not(:has([aria-valuenow="100"])) {
+  box-shadow: 0px 0px 15px oklab(0.576971 0.014185 -0.208914);
+}
+/* Green highlight on Quest card when Quest has completed */
+[class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):has([aria-valuenow="100"]) {
+  box-shadow: 0px 0px 15px oklab(0.731929 -0.156544 0.0807654);
+}
+
+
