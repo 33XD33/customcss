@@ -1,6 +1,7 @@
 /* Themes */
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/clients/amoled-cord.theme.css");
 @import url("https://raw.githubusercontent.com/MiniDiscordThemes/Squared/main/Squared.theme.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/main/test.css");
 
 /* GIF Button */
 button:has([d^=" M-7,-10 C-8.656999588012695,-10 -10"]),
