@@ -1,17 +1,6 @@
 /* Themes */
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/clients/amoled-cord.theme.css");
 @import url("https://raw.githubusercontent.com/MiniDiscordThemes/Squared/main/Squared.theme.css");
-@import url("https://raw.githubusercontent.com/burdenss/customcss/main/test.css");
-
-:root {
-    /* do you want to see your quests/billing/nitro settings? */
-    /* yes, I want to see it -> --billing: block !important; */
-    /* no, hide it -> --billing: none; */
-    --billing: none;
-    /* do you want to see server boosting/server shop upsell? */
-    /* yes, I want to see it -> --boosting: block !important; */
-    /* no, hide it -> --boosting: none; */
-    --boosting: none;
 
 
 /* GIF Button */
