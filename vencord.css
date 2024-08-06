@@ -14,6 +14,7 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
   display: none!important;
 }
 
+
 /* Change the first path definition of the volume icon SVG to be the moving part of my new animated SVG */
 .containerDefault_f6f816:has([class*="voiceUser_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M15.16"] {
     d: path("M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 0 0 0-13.5A1.11 1.11 0 0 1 14 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 0 1 0 17.5Z");
@@ -69,7 +70,6 @@ li:has([d^="M2.63 4.19A3 3 0 0 1 5.53 2H7a1"]) {
 }
 
 
-
 /* Disable Join Server and Discovery Icon */
 div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
 div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
@@ -122,6 +122,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
 }
 
 
+
 /* Discord Call Simple */
 .container_b2ca13 {
     background: var(--bg-overlay-app-frame,var(--background-tertiary)) !important;
@@ -133,11 +134,11 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     height: fit-content;
     padding-top: 2px;
 }
-.container_b2ca13 .flex_bba380 > .button_f67531 {
+.container_b2ca13 .flex_dc333f > .button_adca65 {
     --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
     width: 48px;
     height: 35px;
-    border-radius: 0-px;
+    border-radius: 0px;
     background: var(--nitro-overlay,var(--background-primary));
     transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
 }
@@ -155,7 +156,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     justify-content: center;
     cursor: pointer;
 }
-.container_b2ca13 .flex_bba380 {
+.container_b2ca13 .flex_dc333f {
     justify-content: space-between;
     width: 100%;
     padding-right: 0px;
@@ -235,7 +236,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Flip Camera */
-.mirror_eb1d8c {
+.mirror_a5989d {
     transform: scaleX(1);
 }
 
@@ -306,7 +307,7 @@ div[class^=jumpToPresentBar] {
 
 
 /* Hide Noise Suppression Icon In Call*/
-.button_f67531:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
+.button_adca65:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
   display: none
 }
 
@@ -468,7 +469,7 @@ textarea.textArea_d0696b:placeholder-shown {
 
 /* Change voice activity indicator glow color */
 .theme-dark [class*=avatarSpeaking_] {
-    box-shadow: 0 0 0 2px #ff0000; /* Change #color to your desired border color */
+    box-shadow: 0 0 0 1.5px #ff0000; /* Change #color to your desired border color */
 }
 
 
