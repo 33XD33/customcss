@@ -469,9 +469,21 @@ textarea.textArea_d0696b:placeholder-shown {
 
 /* Change voice activity indicator glow color */
 .theme-dark [class*=avatarSpeaking_] {
-    box-shadow: 0 0 0 1.5px #ff0000; /* Change #color to your desired border color */
+    box-shadow: 0 0 0 1.5px #ff0f0f; /* Change #color to your desired border color */
 }
 
+/*Other People Speaking Icons Inside Voice Channel*/
+.border_ba4b17.speaking_ba4b17 {
+    box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ff0000), inset 0 0 0 3px var(--black-500);
+}
+/*Other People Speaking Icon In The List When Speaking*/
+.avatarSpeaking_d80634 {
+    box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ff0000), inset 0 0 0 3px var(--background-secondary);
+}
+/*Your Icon When Speaking*/
+#app-mount .avatarSpeaking_c51b4e {
+    box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ff0000), inset 0 0 0 3px var(--background-secondary);
+}
 
 /*Shake animation hover to the text area when you don't have permission !*/
 
@@ -526,4 +538,11 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
   box-shadow: 0px 0px 15px oklab(0.576971 0.014185 -0.208914);
 }
 /* Green highlight on Quest card when Quest has completed */
-[class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):has([aria-valuenow="100"]) {
+[class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):has([aria-valuenow="100"])
+
+
+/* Screen Share Layout */
+div[class^=callContainer] div[class^=pictureInPictureWindow]!important; {
+  scale: 2 !important;
+  translate: 50% -75% !important;
+}
