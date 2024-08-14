@@ -236,7 +236,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 :is(main,section)[class^=chatContent] > form,
 form > div[class^=submitContainer] {
   /* align chatbox */
-  padding: 0px;
+  padding: 5px;
   > div > div[class^=channelTextArea] {
     margin: 0px !important;
     > div[class^=scrollableContainer] {
