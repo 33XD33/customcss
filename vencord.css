@@ -1,6 +1,7 @@
 /* Themes */
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/clients/amoled-cord.theme.css");
 @import url("https://raw.githubusercontent.com/MiniDiscordThemes/Squared/main/Squared.theme.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/main/test.css");
 
 
 /* GIF Button */
@@ -539,90 +540,3 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
 }
 /* Green highlight on Quest card when Quest has completed */
 [class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):has([aria-valuenow="100"])
-
-
-/* Screen Share Layout */
-div[class^=callContainer] div[class^=pictureInPictureWindow]!important; {
-  scale: 2 !important;
-  translate: 50% -75% !important;
-}
-
-
-/* settings */
-[class^=standardSidebarView_] {
-    /* tabs */
-    > [class^=sidebarRegion_] > [class^=sidebarRegionScroller_] > nav > [class^=side_] {
-        /* billing settings tabs */
-        /* header */
-        > [class^=header_]:has(+ [class^=premiumTab_]),
-        /* nitro */
-        > [class^=premiumTab_],
-        /* subscriptions */
-        > [data-tab-id="Subscriptions"],
-        /* gift inventory/quests */
-        > [data-tab-id="Library Inventory"],
-        /* billing */
-        > [data-tab-id="Billing"],
-        /* following separator */
-        > [data-tab-id="Billing"] + [class^=separator_] {
-            display: var(--billing);
-        }
-        /* user settings boost tab */
-        > [data-tab-id="Nitro Server Boost"] {
-            display: var(--boosting);
-        }
-        /* user settings merch */
-        > [data-tab-id="merchandise"] {
-            display: none;
-        }
-        /* server settings boost status tab */
-        > [class^=serverBoostTabItem_] {
-            display: var(--boosting);
-            + [class^=separator_] {
-                display: var(--boosting);
-            }
-        }
-        /* server settings subscriptions tab */
-        > [data-tab-id=ROLE_SUBSCRIPTIONS] {
-            display: var(--boosting);
-            [class^=sidebar_] [class^=header_]:has(+ &),
-            + [class^=separator_] {
-                display: var(--boosting);
-            }
-        }
-    }
-    /* profiles tab */
-    #profile-customization-tab {
-        /* "Try Out Nitro!" section */
-        > [class^=premiumFeatureBorder],
-        [class^=limitedFeatureBorder],
-        /* unique server profiles overlay */
-        [class^=upsellOverlayContainer_],
-        /* shop upselling */
-        > [class^=container_][style^="background-image:"] {
-            display: none;
-        }
-        [class^=profileCustomizationSection_] [class^=customizationSection_] {
-            &[class*=withDivider_]:has(> [class^=buttonsContainer_]) {
-                /* avatar decorations */
-                + [class^=customizationSection_],
-                /* profile effects */
-                + [class^=customizationSection_] + [class^=customizationSection_] {
-                    display: none;
-                }
-            }
-            /* disable clicking on server specific avatar when not unlocked */
-            [class^=avatar_][class*=clickable_]:has(path[d^="M7 4a1 1 0 0 0 0 2h3a1"]) {
-                pointer-events: none;
-                /* prevent clicking through status icon */
-                rect {
-                    pointer-events: none;
-                }
-            }
-            /* disable clicking on banner when not unlocked */
-            [class^=banner_] > [class^=clickable_]:has(path[d^="M7 4a1 1 0 0 0 0 2h3a1"]) {
-                pointer-events: none;
-            }
-        }
-    }
-
