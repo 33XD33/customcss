@@ -1,3 +1,4 @@
+@import url("https://raw.githubusercontent.com/burdenss/customcss/main/test.css");
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 
 
@@ -33,20 +34,19 @@
 
 /* Discord Call Simple */
 .container_b2ca13 {
-    background: var(--bg-overlay-app-frame,var(--background-tertiary)) !important;
     justify-content: space-between;
-    padding: 0px;
-    padding-bottom: 6px;
-    gap: 4px;
-    margin: 3px;
+    padding: 5px;
+    padding-bottom: 0px;
+    gap: 15px;
+    margin: 5px;
     height: fit-content;
-    padding-top: 2px;
+    padding-top: 0px;
 }
 .container_b2ca13 .flex_dc333f > .button_adca65 {
     --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-    width: 48px;
-    height: 45px;
-    border-radius: \5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
     background: var(--nitro-overlay,var(--background-primary));
     transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
 }
@@ -55,11 +55,11 @@
     width: 0px;
     height: 0px;
     min-width: unset;
-    border-radius: 0px;
+    border-radius: 5px;
     background: var(--nitro-overlay,var(--background-primary));
     padding: 0px;
     margin: -0px;
-    flex: 0 0 50px;
+    flex: 0 0 35px;
     transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
     justify-content: center;
     cursor: pointer;
@@ -87,8 +87,8 @@
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 60%;
+    height: 60%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -238,13 +238,13 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 :is(main,section)[class^=chatContent] > form,
 form > div[class^=submitContainer] {
   /* align chatbox */
-  padding: 5px;
+  padding: 2px;
   > div > div[class^=channelTextArea] {
     margin: 0px !important;
     > div[class^=scrollableContainer] {
       min-height: 49px;
       padding-top: 4px;
-      border-radius: 0px;
+      border-radius: 10px;
     }
   }
   /* align forum channel thing */
@@ -517,4 +517,4 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
   box-shadow: 0px 0px 15px oklab(0.576971 0.014185 -0.208914);
 }
 /* Green highlight on Quest card when Quest has completed */
-[class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):has([aria-valuenow="100"])
+[class^=questsListContainer_] [class^=questsCard_]:
