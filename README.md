@@ -5,5 +5,4 @@ I update my .css all the time, currently using vencord so better discord might b
 Everything has a label so cut and paste as you please, if discord hasn't update the files it'll be working
 
 themes
-https://github.com/MiniDiscordThemes/Squared
 https://github.com/LuckFire/amoled-cord
