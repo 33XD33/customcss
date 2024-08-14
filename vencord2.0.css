@@ -27,6 +27,49 @@
     50%  {color: var(--red-400);}
 }
 
+
+/* Discord Call Simple */
+.container_b2ca13 {
+    background: var(--bg-overlay-app-frame,var(--background-tertiary)) !important;
+    justify-content: space-between;
+    padding: 0px;
+    padding-bottom: 6px;
+    gap: 4px;
+    margin: 3px;
+    height: fit-content;
+    padding-top: 2px;
+}
+.container_b2ca13 .flex_dc333f > .button_adca65 {
+    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 48px;
+    height: 45px;
+    border-radius: \5px;
+    background: var(--nitro-overlay,var(--background-primary));
+    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
+}
+.container_b2ca13 .avatarWrapper_b2ca13 {
+    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 0px;
+    height: 0px;
+    min-width: unset;
+    border-radius: 0px;
+    background: var(--nitro-overlay,var(--background-primary));
+    padding: 0px;
+    margin: -0px;
+    flex: 0 0 50px;
+    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
+    justify-content: center;
+    cursor: pointer;
+}
+.container_b2ca13 .flex_dc333f {
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 0px;
+}
+.container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
+    display: none;
+}
+
 /* Custom Discord icon using image */
 :root{
 --discord-icon: none; /* discord icon */
