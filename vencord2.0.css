@@ -2,6 +2,11 @@
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 
 
+/** Hide apps button next to chatbar */
+[class^=channelAppLauncher] {
+  display: none ; 
+}
+
 /* Change the first path definition of the volume icon SVG to be the moving part of my new animated SVG */
 .containerDefault_f6f816:has([class*="voiceUser_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M15.16"] {
     d: path("M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 0 0 0-13.5A1.11 1.11 0 0 1 14 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 0 1 0 17.5Z");
@@ -85,8 +90,8 @@
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 60%;
-    height: 60%;
+    width: 65%;
+    height: 65%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -155,14 +160,14 @@ button[class^="vc-ranb"] div[class^="contents_"] {
 
 
 button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "𓆩✧𓆪";
+    content: "⭒ ⚠︎ ⭒";
     visibility: visible;
     display: block;
     position: absolute;
     font-size: 16px;
-    padding: 12px;
-    top: -12px;
-    right:10px;
+    padding: 14px;
+    top: -13px;
+    right:2px;
 }
 
 
@@ -304,7 +309,7 @@ div[class^=jumpToPresentBar] {
 }
 .expandedFolderIconWrapper_bc7085::after,
 .closedFolderIconWrapper_bc7085::after {
-    content: "⟢";
+    content: "♱✧₊⁺";
     background-color: #ffffff;
     width: 24px;
     height: 24px;
@@ -432,7 +437,7 @@ textarea.textArea_d0696b:placeholder-shown {
 
 /*i'm new here, say hi!*/
 [class*=newMemberBadge]:before {
-    content: url(https://opengameart.org/sites/default/files/kaczuha_1.gif);
+    content: url("https://opengameart.org/sites/default/files/kaczuha_1.gif");
     transform: translate(-100%, -110%);
     display: inline-block;
     scale: 0.32;
