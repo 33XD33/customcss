@@ -153,6 +153,7 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     --brand-900-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 12));
 }
 
+
 /* Read All Text Editor */
 button[class^="vc-ranb"] div[class^="contents_"] {
     visibility: hidden;
@@ -521,3 +522,5 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
 }
 /* Green highlight on Quest card when Quest has completed */
 [class^=questsListContainer_] [class^=questsCard_]:
+
+
