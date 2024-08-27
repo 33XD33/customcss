@@ -7,6 +7,7 @@
   display: none ; 
 }
 
+
 /* Change the first path definition of the volume icon SVG to be the moving part of my new animated SVG */
 .containerDefault_f6f816:has([class*="voiceUser_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M15.16"] {
     d: path("M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 0 0 0-13.5A1.11 1.11 0 0 1 14 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 0 1 0 17.5Z");
@@ -80,7 +81,7 @@
 :root{
 --discord-icon: none; /* discord icon */
 --home-icon: block; /* moon icon */
---home-icon-url: url('https://i.imgur.com/ikWwyPd.png');
+--home-icon-url: url('https://i.imgur.com/VkESwP5.png');
 }
 
 [class*=childWrapper] > svg:not([class*=favoriteIcon]){
@@ -90,8 +91,8 @@
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 65%;
-    height: 65%;
+    width: 70%;
+    height: 70%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -161,13 +162,13 @@ button[class^="vc-ranb"] div[class^="contents_"] {
 
 
 button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "⭒ ⚠︎ ⭒";
+    content: "⭒ ✦ ⭒";
     visibility: visible;
     display: block;
     position: absolute;
     font-size: 16px;
     padding: 14px;
-    top: -13px;
+    top: -15px;
     right:2px;
 }
 
@@ -340,14 +341,14 @@ div[class^=jumpToPresentBar] {
 }
 
 [href="/channels/@me"]::after {
-  content: "·:*¨༺ ♱☣︎♱ ༻¨*:·";
+  content: "*‧₊✩˚༺☆༻*✩‧₊˚";
   line-height: 20px;
   font-weight: 200;
   font-size: 20px; 
   /*color:  black */
   visibility: visible;
   position: absolute;
-  left: 40px;
+  left: 43px;
 }
 
 
@@ -419,7 +420,7 @@ textarea.textArea_d0696b::placeholder {
   opacity: 0;
 }
 textarea.textArea_d0696b:placeholder-shown {
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>*ੈ✩‧₊˚༺☆༻*ੈ✩‧₊˚</text></svg>");
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　.</text></svg>");
   background-repeat: no-repeat;
 }
 
@@ -504,23 +505,3 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
   margin-top: 0px;
   scale: 1;
 }
-
-
-/* Minimal Quests */
-[class^=questsListContainer_] [class^=questsCard_]:has([class^=outerContainer_][aria-hidden=false]) {
-  max-height: 115px!important;
-  transition: max-height 1s, box-shadow 1s;
-
-  &:hover {
-    max-height: 323px!important;
-    box-shadow: 0px 0px 0px;
-  }
-}
-/* Blue highlight on Quest card when Quest is in progress */
-[class^=questsListContainer_] [class^=questsCard_]:has([class*=gridProgressBar_]):not(:has([aria-valuenow="100"])) {
-  box-shadow: 0px 0px 15px oklab(0.576971 0.014185 -0.208914);
-}
-/* Green highlight on Quest card when Quest has completed */
-[class^=questsListContainer_] [class^=questsCard_]:
-
-
