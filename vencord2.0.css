@@ -23,6 +23,7 @@
   left: 43px;
 }
 
+
 /* Read All Text Editor */
 button[class^="vc-ranb"] div[class^="contents_"] {
     visibility: hidden;
@@ -97,7 +98,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-
 /* Aligns chat box with the bottom of the screen and user controls */
 :is(main,section)[class^=chatContent] > form,
 form > div[class^=submitContainer] {
@@ -156,6 +156,7 @@ div[class^=jumpToPresentBar] {
     scale: 0.32;
 }
 
+
 /* Discord Call Simple */
 .container_b2ca13 {
     justify-content: space-between;
@@ -194,6 +195,7 @@ div[class^=jumpToPresentBar] {
 .container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
     display: none;
 }
+
 
 /* Custom Discord icon using image */
 :root{
@@ -529,6 +531,7 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
     color: var(--interactive-active) !important;
 }
 
+
 /* Make Delete/Logout Buttons Red */
 [class^=item_][data-tab-id="DELETE"],
 [class^=item_][data-tab-id="logout"] {
@@ -537,4 +540,16 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
 [class^=item_][data-tab-id="DELETE"]:hover,
 [class^=item_][data-tab-id="logout"]:hover {
     background-color: var(--info-danger-background) !important;
+}
+
+
+/* Firends Icon */
+.icon_fc4f04 {
+    display:none;
+}
+.iconWrapper_fc4f04{
+    display:none;
+}
+.titleWrapper_fc4f04 {
+    display:none;
 }
