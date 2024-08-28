@@ -528,3 +528,13 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
     background-color: var(--background-modifier-hover) !important;
     color: var(--interactive-active) !important;
 }
+
+/* Make Delete/Logout Buttons Red */
+[class^=item_][data-tab-id="DELETE"],
+[class^=item_][data-tab-id="logout"] {
+    color: var(--info-danger-foreground) !important;
+}
+[class^=item_][data-tab-id="DELETE"]:hover,
+[class^=item_][data-tab-id="logout"]:hover {
+    background-color: var(--info-danger-background) !important;
+}
