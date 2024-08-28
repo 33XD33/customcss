@@ -1,3 +1,9 @@
+/* Disable Join Server and Discovery Icon */
+div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
+div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
+{display: none !important;}
+
+
 /* Make Delete/Logout Buttons Red */
 [class^=item_][data-tab-id="DELETE"],
 [class^=item_][data-tab-id="logout"] {
