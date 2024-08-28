@@ -44,7 +44,7 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
 
 /* Custom Discord icon using image */
 :root {
-     --background-image: url("https://media.giphy.com/media/jn4N059jwA2UE/giphy.gif?cid=ecf05e47d87b5vn4fhm8g91p2n8p4x9b0pnnvtyi9h4019pf&ep=v1_gifs_search&rid=giphy.gif&ct=s"); /* Change image here */
+     --background-image: url("https://media.tenor.com/4noHdLpBCgEAAAAi/cat-pop-pop-pop.gif"); /* Change image here */
      --size: 100px;  /* Change Image size here */
      --align: right; /* Change alignment here */
 }
@@ -56,7 +56,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     background-repeat: no-repeat !important;
     transform: scaleX(1);
     margin-left: 1%;
-    margin-right: 1%;
+    margin-right: 2%;
     height: var(--size);
     max-height: var(--size);
     top: calc(var(--size) - var(--size) - var(--size));
@@ -98,42 +98,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-/* Aligns chat box with the bottom of the screen and user controls */
-:is(main,section)[class^=chatContent] > form,
-form > div[class^=submitContainer] {
-  /* align chatbox */
-  padding: 2px;
-  > div > div[class^=channelTextArea] {
-    margin: 0px !important;
-    > div[class^=scrollableContainer] {
-      min-height: 49px;
-      padding-top: 4px;
-      border-radius: 10px;
-    }
-  }
-  /* align forum channel thing */
-  > div { margin-bottom: 0px; border-radius: 0px; }
-  
-  /* move slowmode/typing indicator to match */
-  > div[class^=typing] {
-    top: -24px;
-    right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
-    margin-left: auto;
-    width: fit-content;
-    padding-left: 2px;
-    padding-right: 9px;
-    border-radius: 8px 8px 0px 0px;
-    background-color: var(--channeltextarea-background);
-  }
-  /* make scrollbar meet chatbox */
-  &::after { display: none; }
-
-  /* fix replies */
-  > div > div > div[class^=attachedBars] {
-    min-height: unset !important;
-    padding-bottom: 4px;
-  }
-}
 
 
 /* jump to present */
@@ -252,6 +216,15 @@ textarea.textArea_d0696b:placeholder-shown {
 }
 
 
+/* Remove Top Left Discord Icon */
+.wordmark_a934d8{pointer-events:unset;padding:0}
+.wordmark_a934d8>svg{display:none}
+.wordmark_a934d8::after{position:absolute;top:4px;padding:4px 9px 3px;font-size:9px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
+:root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
+
+:root {
+    --modtitle-text: "" !important;
+}
 
 
 
@@ -263,7 +236,8 @@ textarea.textArea_d0696b:placeholder-shown {
 
 
 
-/* ^NOT EDITABLE^ */
+
+/* ^DO NOT EDIT^ */
 
 
 
@@ -283,16 +257,6 @@ div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]),
 div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
 {display: none !important;}
 
-
-/* Remove Top Left Discord Icon */
-.wordmark_a934d8{pointer-events:unset;padding:0}
-.wordmark_a934d8>svg{display:none}
-.wordmark_a934d8::after{position:absolute;top:4px;padding:4px 9px 3px;font-size:9px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
-:root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
-
-:root {
-    --modtitle-text: "" !important;
-}
 
 
 /* Main icons Transparent :hover */
@@ -382,7 +346,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
     transform: scaleX(1);
 }
 
-
 /* Hide Stuff */
 [aria-label="Threads"],
 [aria-label="Notification Settings"],
@@ -391,7 +354,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 [aria-label="Help"] {
   display: none
 }
-
 
 
 /* Hide Noise Suppression Icon In Call*/
@@ -542,14 +504,39 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
     background-color: var(--info-danger-background) !important;
 }
 
+/* Aligns chat box with the bottom of the screen and user controls */
+:is(main,section)[class^=chatContent] > form,
+form > div[class^=submitContainer] {
+  /* align chatbox */
+  padding: 2px;
+  > div > div[class^=channelTextArea] {
+    margin: 0px !important;
+    > div[class^=scrollableContainer] {
+      min-height: 49px;
+      padding-top: 4px;
+      border-radius: 10px;
+    }
+  }
+  /* align forum channel thing */
+  > div { margin-bottom: 0px; border-radius: 0px; }
+  
+  /* move slowmode/typing indicator to match */
+  > div[class^=typing] {
+    top: -24px;
+    right: calc(var(--custom-index-scrollbar-margin) * 2 + var(--custom-index-scrollbar-width));
+    margin-left: auto;
+    width: fit-content;
+    padding-left: 2px;
+    padding-right: 9px;
+    border-radius: 8px 8px 0px 0px;
+    background-color: var(--channeltextarea-background);
+  }
+  /* make scrollbar meet chatbox */
+  &::after { display: none; }
 
-/* Firends Icon */
-.icon_fc4f04 {
-    display:none;
-}
-.iconWrapper_fc4f04{
-    display:none;
-}
-.titleWrapper_fc4f04 {
-    display:none;
+  /* fix replies */
+  > div > div > div[class^=attachedBars] {
+    min-height: unset !important;
+    padding-bottom: 4px;
+  }
 }
