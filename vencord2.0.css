@@ -240,6 +240,21 @@ div[class^=jumpToPresentBar] {
 }
 
 
+/* Text Editor Typing Area */
+textarea.textArea_d0696b::placeholder {
+  opacity: 0;
+}
+textarea.textArea_d0696b:placeholder-shown {
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　.</text></svg>");
+  background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
 
 
 
@@ -247,6 +262,12 @@ div[class^=jumpToPresentBar] {
 
 
 /* ^NOT EDITABLE^ */
+
+
+
+
+
+
 
 
 
@@ -418,14 +439,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
     }
 }
 
-
-textarea.textArea_d0696b::placeholder {
-  opacity: 0;
-}
-textarea.textArea_d0696b:placeholder-shown {
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　.</text></svg>");
-  background-repeat: no-repeat;
-}
 
 
 /* Call Icon Buttons */
