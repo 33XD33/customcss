@@ -6,6 +6,16 @@
   display: none ; 
 }
 
+/*Support icon in toolbar*/
+.toolbar_fc4f04 .anchor_af404b[href="https://support.discord.com"],
+/* Bell icon/notification settings*/
+.iconWrapper_fc4f04:has(path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"],
+/*Add friends to dm*/
+path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5"],
+/*enable camera in dm*/
+path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none; 
+}
+
 
 /* Disable Join Server and Discovery Icon */
 div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
@@ -129,19 +139,6 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
     --brand-860-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 11));
     --brand-900-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 12));
 }
-
-
-
-/*Support icon in toolbar*/
-.toolbar_fc4f04 .anchor_af404b[href="https://support.discord.com"],
-/* Bell icon/notification settings*/
-.iconWrapper_fc4f04:has(path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"],
-/*Add friends to dm*/
-path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5"],
-/*enable camera in dm*/
-path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none; 
-}
-
 
 /* Remove Activty Button*/
 .buttonContainer_b6e2f9 {
