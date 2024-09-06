@@ -2,6 +2,35 @@
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 
 
+/* Hover/Simple Call Icons */
+.container_b2ca13 {
+    height: unset;
+    flex-direction: column;
+    padding: 8px;
+    gap: 4px;
+}
+.container_b2ca13 .avatarWrapper_b2ca13 {
+    min-width: unset;
+    width: 100%;
+    margin: 0;
+    transition: .1s;
+}
+.container_b2ca13>.flex_dc333f {
+    width: 100%;
+    justify-content: space-around;
+}
+.container_b2ca13>.flex_dc333f button {
+    width: 100%;
+    transition: .3s;
+    height: 0;
+    overflow: hidden;
+}
+.container_b2ca13:hover>.flex_dc333f button{
+    height: 32px
+}
+
+
+
 /* Friends to Home */
 [href="/channels/@me"] {
   visibility: hidden;
@@ -121,46 +150,6 @@ div[class^=jumpToPresentBar] {
 }
 
 
-/* Discord Call Simple */
-.container_b2ca13 {
-    justify-content: space-between;
-    padding: 0px;
-    padding-bottom: 0px;
-    gap: 15px;
-    margin: 5px;
-    height: fit-content;
-    padding-top: 5px;
-}
-.container_b2ca13 .flex_dc333f > .button_adca65 {
-    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-    width: 50px;
-    height: 50px;
-    border-radius: 10px;
-    background: var(--nitro-overlay,var(--background-primary));
-}
-.container_b2ca13 .avatarWrapper_b2ca13 {
-    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-    width: 10px;
-    height: 0px;
-    min-width: unset;
-    border-radius: 0px;
-    background: var(--nitro-overlay,var(--background-primary));
-    padding: 15px;
-    margin: 0px;
-    flex: 0 0 5px;
-    justify-content: center;
-    cursor: pointer;
-}
-.container_b2ca13 .flex_dc333f {
-    justify-content: space-between;
-    width: 100%;
-    padding-right: 0px;
-}
-.container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
-    display: none;
-}
-
-
 /* Custom Discord icon using image */
 :root{
 --discord-icon: none; /* discord icon */
@@ -175,8 +164,8 @@ div[class^=jumpToPresentBar] {
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 70%;
-    height: 70%;
+    width: 75%;
+    height: 75%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -539,4 +528,13 @@ form > div[class^=submitContainer] {
     min-height: unset !important;
     padding-bottom: 4px;
   }
+}
+
+
+/* Centered Voice Controls */
+.bottomControls_dd069c > .flex_dc333f:is(:first-child, :last-child) {
+  flex: 1 1 50% !important;
+}
+.bottomControls_dd069c > .flex_dc333f:nth-child(2) {
+  flex: 0 1 auto !important;
 }
