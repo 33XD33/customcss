@@ -30,7 +30,6 @@
 }
 
 
-
 /* Friends to Home */
 [href="/channels/@me"] {
   visibility: hidden;
@@ -60,14 +59,14 @@ button[class^="vc-ranb"] div[class^="contents_"] {
 
 
 button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "⭒ ✦ ⭒";
+    content: "⭒ ✮ ⭒";
     visibility: visible;
     display: block;
     position: absolute;
     font-size: 16px;
     padding: 14px;
     top: -15px;
-    right:2px;
+    right:4px;
 }
 
 
@@ -108,7 +107,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 .expandedFolderIconWrapper_bc7085::after,
 .closedFolderIconWrapper_bc7085::after {
-    content: "♱✧₊⁺";
+    content: "★⋆";
     background-color: #ffffff;
     width: 24px;
     height: 24px;
@@ -125,8 +124,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .theme-light .folder_bc7085[aria-expanded="false"] {
     background-color: #000000;
 }
-
-
 
 
 /* jump to present */
@@ -200,7 +197,7 @@ textarea.textArea_d0696b::placeholder {
   opacity: 0;
 }
 textarea.textArea_d0696b:placeholder-shown {
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　.</text></svg>");
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　˚　　　　✦　　　.　　. 　 ˚　.　　　　　 . ✦　　　 　˚　　　　 . ★⋆. ࿐࿔ .</text></svg>");
   background-repeat: no-repeat;
 }
 
@@ -208,11 +205,11 @@ textarea.textArea_d0696b:placeholder-shown {
 /* Remove Top Left Discord Icon */
 .wordmark_a934d8{pointer-events:unset;padding:0}
 .wordmark_a934d8>svg{display:none}
-.wordmark_a934d8::after{position:absolute;top:4px;padding:4px 9px 3px;font-size:9px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
+.wordmark_a934d8::after{position:absolute;top:4px;padding:3px 9px 3px;font-size:10px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
 :root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
 
 :root {
-    --modtitle-text: "" !important;
+    --modtitle-text: "𝔅𝔘ℜ𝔇𝔈𝔑 ⋆｡°✩ ⋆⁺｡˚⋆˙‧₊✩₊‧˙⋆˚｡⁺⋆ ✩°｡⋆" !important;
 }
 
 
