@@ -224,14 +224,16 @@ textarea.textArea_d0696b:placeholder-shown {
 
 
 /* Text Editor Typing Area */
-textarea.textArea_d0696b::placeholder {
-  opacity: 0;
-}
-textarea.textArea_d0696b:placeholder-shown {
-  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　˚　　　　✦　　　.　　. 　 ˚　.　　　　　 . ✦　　　 　˚　　　　 . ★⋆. ࿐࿔ .</text></svg>");
-  background-repeat: no-repeat;
+.placeholder_a552a6 {
+  font-size: 0;
 }
 
+.placeholder_a552a6:before{
+  font-size: medium;
+    white-space:nowrap;
+    content:"　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　˚　　　　✦　　　.　　. 　 ˚　.　　　　　 . ✦　　　 　˚　　　　 . ★⋆. ࿐࿔ ";
+    word-spacing:initial;
+}
 
 
 
