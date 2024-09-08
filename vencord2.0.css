@@ -209,7 +209,7 @@ textarea.textArea_d0696b:placeholder-shown {
 :root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
 
 :root {
-    --modtitle-text: "𝔅𝔘ℜ𝔇𝔈𝔑 ⋆｡°✩ ⋆⁺｡˚⋆˙‧₊✩₊‧˙⋆˚｡⁺⋆ ✩°｡⋆" !important;
+    --modtitle-text: "" !important;
 }
 
 
@@ -221,6 +221,18 @@ textarea.textArea_d0696b:placeholder-shown {
     content: "　ﾟ　　☾　　.　　　*　　⠀.　 ★";
   }
 }
+
+
+/* Text Editor Typing Area */
+textarea.textArea_d0696b::placeholder {
+  opacity: 0;
+}
+textarea.textArea_d0696b:placeholder-shown {
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><text x='0' y='29' fill='gray' font-size='18'>　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　˚　　　　✦　　　.　　. 　 ˚　.　　　　　 . ✦　　　 　˚　　　　 . ★⋆. ࿐࿔ .</text></svg>");
+  background-repeat: no-repeat;
+}
+
+
 
 
 
@@ -544,4 +556,11 @@ form > div[class^=submitContainer] {
 }
 .bottomControls_dd069c > .flex_dc333f:nth-child(2) {
   flex: 0 1 auto !important;
+}
+
+
+/* Don't show me activity */
+[class^='membersGroup']:has([role=button]),
+[class^='member'] [class^='container']:has([class*='badges']) {
+  display: none;
 }
