@@ -1,16 +1,5 @@
-/
-/
-/
-/
-/
-/
 /*Hide Nitro*/
-/
-/
-/
-/
-/
-/
+
 
 /*
  * @name Hide Nitro Upselling
@@ -500,19 +489,11 @@ a[href*="/snowsgiving"] {
   display: none;
 }
 
-/
-/
-/
-/
-/
-/
+
+
 /*Spotify Player*/
-/
-/
-/
-/
-/
-/
+
+
 
 /* BetterSpotifyPlayer */
 /* a spotify icon snippet */
@@ -664,19 +645,11 @@ a[href*="/snowsgiving"] {
 /* */
 /* adding this to force update */
 
-/
-/
-/
-/
-/
-/
+
+
 /*Extra Person CSS*/
-/
-/
-/
-/
-/
-/
+
+
 
 /* Disable Join Server and Discovery Icon */
 div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
