@@ -1,5 +1,7 @@
-@import url("https://raw.githubusercontent.com/burdenss/customcss/main/extra.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/main/extracss.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/main/nitrohideandspotifyplayer.css");
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/discordicon.css");
 
 
 /* Hover/Simple Call Icons */
@@ -45,7 +47,7 @@
   line-height: 20px;
   font-weight: 200;
   font-size: 20px; 
-  /*color:  black */
+  /* color:  black */
   visibility: visible;
   position: absolute;
   left: 43px;
@@ -138,7 +140,7 @@ div[class^=jumpToPresentBar] {
 }
 
 
-/*i'm new here, say hi!*/
+/* i'm new here, say hi! */
 [class*=newMemberBadge]:before {
     content: url("https://opengameart.org/sites/default/files/kaczuha_1.gif");
     transform: translate(-100%, -110%);
@@ -225,10 +227,17 @@ div[class^=jumpToPresentBar] {
 }
 
 
-
-
-/* <New Below> */
-
-
-
+/*
+/
+/
+/
+/
+/*
+/* Add New Below */
+/*
+/
+/
+/
+/
+/*
 
