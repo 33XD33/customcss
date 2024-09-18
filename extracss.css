@@ -367,3 +367,9 @@ form > div[class^=submitContainer] {
     background: var(--background-accent);
   }
 }
+
+
+/* Image Activity Icon */
+.hoverButtonGroup_d0395d {
+    display: none
+}
