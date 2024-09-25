@@ -208,8 +208,8 @@ div[class^=jumpToPresentBar] {
 .nowPlayingColumn_c2739c [data-text-variant="heading-lg/semibold"] {
   font-size: 0;
   &:after {
-    font-size: x-large;
-    content: "　ﾟ　　☾　　.　　　*　　⠀.　 ★";
+    font-size: large;
+    content: "☆⠀⠀.　⠀✦ ⠀ ⠀*⠀⠀.　 ˚　⠀.  　⋆　 ✴　 .";
   }
 }
 
@@ -240,4 +240,3 @@ div[class^=jumpToPresentBar] {
 /
 /
 /*
-
