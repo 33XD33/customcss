@@ -4,32 +4,116 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/discordicon.css");
 
 
-/* Hover/Simple Call Icons */
-.container_b2ca13 {
-    height: 60px;
-    flex-direction: unset;
-    padding: 8px;
-    gap: 4px;
+/* Discord Call Top Left */
+.panels_a4d4d9 {
+    order: -1;
+}
+.platform-win .container_b2ca13,
+.platform-osx .container_b2ca13 {
+    padding-top: 10px;
+}
+.container_b2ca13 .flex_dc333f > .button_adca65 {
+    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+    background: var(--nitro-overlay,var(--background-primary));
+    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
 }
 .container_b2ca13 .avatarWrapper_b2ca13 {
+    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 0px;
+    height: 0px;
     min-width: unset;
-    width: 100%;
+    border-radius: 0px;
+    background: var(--nitro-overlay,var(--background-primary));
+    padding: 0px;
     margin: 0;
-    transition: .1s;
+    flex: 0 0 48px;
+    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
+    justify-content: center;
+    cursor: pointer;
 }
-.container_b2ca13>.flex_dc333f {
+.container_b2ca13 .flex_dc333f {
+    justify-content: space-between;
     width: 100%;
-    justify-content: space-around;
+    padding-right: 8px;
 }
-.container_b2ca13>.flex_dc333f button {
-    width: 100%;
-    transition: .3s;
-    height: 0;
-    overflow: hidden;
+.container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
+    display: none;
 }
-.container_b2ca13:hover>.flex_dc333f button{
-    height: 32px
+.container_b2ca13 .avatarWrapper_b2ca13:hover,
+.container_b2ca13 .avatarWrapper_b2ca13[aria-expanded="true"],
+.container_b2ca13 .flex_dc333f > .button_adca65:hover {
+    background: var(--brand-500);
+    border-radius: 0px;
 }
+.actionButtons_adcaac .button_adcaac {
+    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
+    width: 48px;
+    height: 48px;
+    padding: 12;
+    border-radius: 50px;
+    flex: 0 0 48px;
+    background: var(--nitro-overlay,var(--background-primary));
+    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
+}
+.actionButtons_adcaac .button_adcaac:hover,
+.actionButtons_adcaac .button_adcaac[aria-expanded="true"] {
+    background: var(--brand-500);
+    border-radius: 16px;
+}
+.connection_adcaac {
+    padding: 8px;
+    height: 60px;
+    box-sizing: border-box;
+}
+.peopleColumn_c2739c .inner__999f6 {
+    height: 60px;
+    padding: 16;
+}
+.nowPlayingColumn_c2739c .scroller_bf550a {
+    margin: 10;
+    overflow: hidden overlay !important;
+    padding-right: 16px !important;
+    border: none;
+}
+.nowPlayingColumn_c2739c .header_bf550a {
+    margin: 21;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+    margin-top: -16px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 12px;
+    box-sizing: border-box;
+    background: var(--bg-overlay-4,var(--background-tertiary));
+    position: fixed;
+    z-index: +1;
+}
+.nowPlayingColumn_c2739c .header_bf550a + .itemCard_f02fcf {
+    margin-top: 60px;
+}
+
+
+
+/* Read All Text Editor */
+button[class^="vc-ranb"] div[class^="contents_"] {
+    visibility: hidden;
+}
+
+
+button[class^="vc-ranb"] div[class^="contents_"]::after {
+    content: "𓆩✧𓆪";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    font-size: 18px;
+    padding: 10px;
+    top: -10px;
+    right:10px;
+}
+
 
 
 /* Friends to Home */
@@ -46,11 +130,11 @@
   content: "*‧₊✩˚༺☆༻*✩‧₊˚";
   line-height: 20px;
   font-weight: 200;
-  font-size: 20px; 
+  font-size: 18px; 
   /* color:  black */
   visibility: visible;
   position: absolute;
-  left: 43px;
+  left: 50px;
 }
 
 
