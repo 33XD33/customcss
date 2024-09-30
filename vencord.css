@@ -6,8 +6,8 @@
 
 /* Hover/Simple Call Icons */
 .container_b2ca13 {
-    height: unset;
-    flex-direction: column;
+    height: 60px;
+    flex-direction: unset;
     padding: 8px;
     gap: 4px;
 }
@@ -227,16 +227,9 @@ div[class^=jumpToPresentBar] {
 }
 
 
-/*
-/
-/
-/
-/
-/*
+
+
 /* Add New Below */
-/*
-/
-/
-/
-/
-/*
+
+
+
