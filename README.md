@@ -1,6 +1,8 @@
 - *revcord custom css* -
 
-I update my .css all the time, I don't own the code i've just edited from others and added things for my personal use. Take as you please.
+I update vencord.css all the time, Take as you please.
+
+If you have a problem with the code or want it removed please contact me on twitter @bmbd or discord @bur_den
 
 Vencord Plugin: AlwaysAnimate, BetterUploadButton, BiggerStreamPreview, CallTimer, FakeNitro, MentionAvatars, NoReplyMention, PinDMs, ReadAllNotificationsButton, SilentTyping, SpotifyControls, ThemeAttributes & VencordToolbox
 
