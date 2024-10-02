@@ -1,117 +1,49 @@
-@import url("https://raw.githubusercontent.com/burdenss/customcss/main/extracss.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/main/nitrohideandspotifyplayer.css");
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/discordicon.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/horizontalserverlist.css");
 
 
 /* Discord Call Top Left */
-.panels_a4d4d9 {
-    order: -1;
+/* --Improved User Area-- */
+/* Make both the username and status message visible at all times. */
+.container_b2ca13 .hovered_e07331, .hoverRoll_e07331.forceHover_e07331:not(.disabled_e07331) .default_e07331{
+  opacity: 1!important;
+  transform: none;
 }
-.platform-win .container_b2ca13,
-.platform-osx .container_b2ca13 {
-    padding-top: 10px;
+/* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
+.container_b2ca13 .hovered_e07331::before{
+  content: "@";
 }
-.container_b2ca13 .flex_dc333f > .button_adca65 {
-    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-    width: 48px;
-    height: 48px;
-    border-radius: 50px;
-    background: var(--nitro-overlay,var(--background-primary));
-    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
+/* Move the custom Status message down so that it doesnt overlap with the Username */
+.default_e07331{
+  margin-top: 15px;
 }
-.container_b2ca13 .avatarWrapper_b2ca13 {
-    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-    width: 0px;
-    height: 0px;
-    min-width: unset;
-    border-radius: 0px;
-    background: var(--nitro-overlay,var(--background-primary));
-    padding: 0px;
-    margin: 0;
-    flex: 0 0 48px;
-    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
-    justify-content: center;
-    cursor: pointer;
+/* Credit to @thecommieaxolotl for this code. */
+/* --Hides User Buttons until Hover-- */
+/* Hide mute and deafen buttons */
+.panels_a4d4d9 > .container_b2ca13 .flex_dc333f > :not(:last-child) {
+  opacity: 0% !important;
+  width: 0px;
+  transition: all 0.3s ease-in-out;
 }
-.container_b2ca13 .flex_dc333f {
-    justify-content: space-between;
-    width: 100%;
-    padding-right: 8px;
+/* Reveal mute and Deafen buttons when settings button is hovered */
+.panels_a4d4d9 > .container_b2ca13 .flex_dc333f:hover > :not(:last-child) {
+  opacity: 100% !important;
+  width: 35px;
 }
-.container_b2ca13 .avatarWrapper_b2ca13 .nameTag_b2ca13 {
-    display: none;
+/* Resize and move the profile button to take up all the space it can to look clean. */
+.avatarWrapper_b2ca13{
+  transition: all 0.3s ease-in-out;
+  width: 100%!important;
+  margin-left: -12px;
+  height: 53px;
+  border-radius: 0!important;
 }
-.container_b2ca13 .avatarWrapper_b2ca13:hover,
-.container_b2ca13 .avatarWrapper_b2ca13[aria-expanded="true"],
-.container_b2ca13 .flex_dc333f > .button_adca65:hover {
-    background: var(--brand-500);
-    border-radius: 0px;
-}
-.actionButtons_adcaac .button_adcaac {
-    --nitro-overlay: rgb(var(--bg-overlay-color-inverse)/var(--bg-overlay-opacity-6));
-    width: 48px;
-    height: 48px;
-    padding: 12;
-    border-radius: 50px;
-    flex: 0 0 48px;
-    background: var(--nitro-overlay,var(--background-primary));
-    transition: background-color .15s ease-out,color .15s ease-out, border-radius .2s ease;
-}
-.actionButtons_adcaac .button_adcaac:hover,
-.actionButtons_adcaac .button_adcaac[aria-expanded="true"] {
-    background: var(--brand-500);
-    border-radius: 16px;
-}
-.connection_adcaac {
-    padding: 8px;
-    height: 60px;
-    box-sizing: border-box;
-}
-.peopleColumn_c2739c .inner__999f6 {
-    height: 60px;
-    padding: 16;
-}
-.nowPlayingColumn_c2739c .scroller_bf550a {
-    margin: 10;
-    overflow: hidden overlay !important;
-    padding-right: 16px !important;
-    border: none;
-}
-.nowPlayingColumn_c2739c .header_bf550a {
-    margin: 21;
-    width: calc(100% + 32px);
-    margin-left: -16px;
-    margin-top: -16px;
-    height: 60px;
-    line-height: 60px;
-    padding: 0 12px;
-    box-sizing: border-box;
-    background: var(--bg-overlay-4,var(--background-tertiary));
-    position: fixed;
-    z-index: +1;
-}
-.nowPlayingColumn_c2739c .header_bf550a + .itemCard_f02fcf {
-    margin-top: 60px;
-}
-
-
-
-/* Read All Text Editor */
-button[class^="vc-ranb"] div[class^="contents_"] {
-    visibility: hidden;
-}
-
-
-button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "𓆩✧𓆪";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    font-size: 18px;
-    padding: 10px;
-    top: -10px;
-    right:10px;
+/* Move the avatar back to the right a bit to look clean. */
+.avatarWrapper_b2ca13 .avatar_b2ca13{
+  margin-left: 10px;
 }
 
 
@@ -145,14 +77,14 @@ button[class^="vc-ranb"] div[class^="contents_"] {
 
 
 button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "⭒ ✮ ⭒";
+    content: "₊˚⊹☆";
     visibility: visible;
     display: block;
     position: absolute;
     font-size: 16px;
-    padding: 14px;
+    padding: 16px;
     top: -15px;
-    right:4px;
+    right:-3px;
 }
 
 
@@ -280,11 +212,11 @@ div[class^=jumpToPresentBar] {
 /* Remove Top Left Discord Icon */
 .wordmark_a934d8{pointer-events:unset;padding:0}
 .wordmark_a934d8>svg{display:none}
-.wordmark_a934d8::after{position:absolute;top:4px;padding:3px 9px 3px;font-size:10px;letter-spacing:.4px;white-space:nowrap;font-family:var(--font-headline);content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
+.wordmark_a934d8::after{position:absolute;top:4px;padding:2px 9px 3px;font-size:14px;letter-spacing:.9px;white-space:nowrap;font-family:Old London;content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
 :root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
 
 :root {
-    --modtitle-text: "" !important;
+    --modtitle-text: "Discord - Burden" !important;
 }
 
 
@@ -314,6 +246,7 @@ div[class^=jumpToPresentBar] {
 
 
 /* Add New Below */
+
 
 
 
