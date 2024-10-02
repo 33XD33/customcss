@@ -3,7 +3,7 @@
 
 
 /* Disable Join Server and Discovery Icon */
-circleIconButton_db6521 fixedDiscoveryIcon_fea3ef="Explore Discoverable Servers"]), 
+guildsnav___guild-discover-button="Explore Discoverable Servers"]), 
 div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
 {display: none !important;}
 
