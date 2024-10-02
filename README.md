@@ -4,9 +4,9 @@ I update vencord.css all the time, Take as you please.
 
 If you have a problem with the code or want it removed please contact me on twitter @bmbd or discord @bur_den
 
-Vencord Plugin: AlwaysAnimate, BetterUploadButton, BiggerStreamPreview, CallTimer, FakeNitro, MentionAvatars, NoReplyMention, PinDMs, ReadAllNotificationsButton, SilentTyping, SpotifyControls, ThemeAttributes & VencordToolbox
+Some things might not work if you aren't using ThemeAttributes & VencordToolbox plugins.
 
 ```
-https://github.com/LuckFire/amoled-cord
+Theme : https://github.com/LuckFire/amoled-cord
 
 ```
