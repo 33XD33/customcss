@@ -1,5 +1,15 @@
 /*Extra Person CSS*/
 
+/* Hide Server Test (Imarahs Server) */
+[class^="listItem_"] [data-dnd-name="1193003937666707636"] [class^="wrapper_"] {
+    > [class^="lowerBadge_"] {
+        display: none!important;
+    }
+    > svg > mask > use[href*="lower"] {
+        display: none;
+    }
+}
+
 
 
 /* Disable Join Server and Discovery Icon */
