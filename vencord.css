@@ -6,27 +6,13 @@
 
 
 /* Discord Call Top Left */
-/* --Improved User Area-- */
-/* Make both the username and status message visible at all times. */
-.container_b2ca13 .hovered_e07331, .hoverRoll_e07331.forceHover_e07331:not(.disabled_e07331) .default_e07331{
-  opacity: 1!important;
-  transform: none;
-}
-/* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
-.container_b2ca13 .hovered_e07331::before{
-  content: "@";
-}
-/* Move the custom Status message down so that it doesnt overlap with the Username */
-.default_e07331{
-  margin-top: 15px;
-}
 /* Credit to @thecommieaxolotl for this code. */
 /* --Hides User Buttons until Hover-- */
 /* Hide mute and deafen buttons */
 .panels_a4d4d9 > .container_b2ca13 .flex_dc333f > :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 /* Reveal mute and Deafen buttons when settings button is hovered */
 .panels_a4d4d9 > .container_b2ca13 .flex_dc333f:hover > :not(:last-child) {
@@ -35,7 +21,7 @@
 }
 /* Resize and move the profile button to take up all the space it can to look clean. */
 .avatarWrapper_b2ca13{
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
   width: 100%!important;
   margin-left: -12px;
   height: 53px;
@@ -81,9 +67,9 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
     visibility: visible;
     display: block;
     position: absolute;
-    font-size: 16px;
-    padding: 16px;
-    top: -15px;
+    font-size: 14px;
+    padding: 20px;
+    top: -16px;
     right:-3px;
 }
 
@@ -144,17 +130,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-/* jump to present */
-div[class^=jumpToPresentBar] {
-  left: 0; right: unset;
-  border-radius: 0px 8px 0px 0px;
-  background-color: var(--channeltextarea-background);
-  > button[class^=barButtonMain] {
-    flex: 0 0 auto;
-    display: none;
-  }
-}
-
 
 /* i'm new here, say hi! */
 [class*=newMemberBadge]:before {
@@ -179,8 +154,8 @@ div[class^=jumpToPresentBar] {
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 75%;
-    height: 75%;
+    width: 90%;
+    height: 90%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -246,6 +221,8 @@ div[class^=jumpToPresentBar] {
 
 
 /* Add New Below */
+
+
 
 
 
