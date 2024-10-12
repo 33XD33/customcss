@@ -45,14 +45,15 @@
 }
 
 [href="/channels/@me"]::after {
-  content: "*‧₊✩˚༺☆༻*✩‧₊˚";
-  line-height: 20px;
-  font-weight: 200;
-  font-size: 18px; 
+  content: "　　H-O-M-E　　";
+  line-height: 80px;
+  font-weight: 290;
+  font-size: 20px; 
+  font-family: Old London;
   /* color:  black */
   visibility: visible;
   position: absolute;
-  left: 50px;
+  left: 35px;
 }
 
 
@@ -63,14 +64,15 @@ button[class^="vc-ranb"] div[class^="contents_"] {
 
 
 button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "₊˚⊹☆";
+    content: "R-A";
     visibility: visible;
     display: block;
     position: absolute;
-    font-size: 14px;
-    padding: 20px;
+    font-family:Old London;
+    font-size: 16px;
+    padding: 24px;
     top: -16px;
-    right:-3px;
+    right:-4px;
 }
 
 
@@ -200,7 +202,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
   font-size: 0;
   &:after {
     font-size: large;
-    content: "☆⠀⠀.　⠀✦ ⠀ ⠀*⠀⠀.　 ˚　⠀.  　⋆　 ✴　 .";
+    font-family: Old London;
+    content: "ACTIVE USERS - ACTIVE SERVERS";
   }
 }
 
@@ -213,7 +216,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .placeholder_a552a6:before{
   font-size: medium;
     white-space:nowrap;
-    content:"　.   　　˚　　 　　*　　 　　✦　　.　　.　　　✦　˚ 　　　 ˚　.˚　　　✦　　.　　. 　 ˚　˚　　　　✦　　　.　　. 　 ˚　.　　　　　 . ✦　　　 　˚　　　　 . ★⋆. ࿐࿔ ";
+    font-family: Old London;
+    content:"I AM TYPING HERE . . . . . . . . . . . . .";
     word-spacing:initial;
 }
 
@@ -221,8 +225,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 /* Add New Below */
-
-
 
 
 
