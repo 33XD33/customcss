@@ -474,3 +474,23 @@ div[class^=jumpToPresentBar] {
 
 /* White Noti Lines */
 .item_c4cd66{display:none}
+
+/* Gradient Direct Messages */
+[class^="link_"][aria-label*="(direct message)"]:has([aria-label*="Online"]) {
+    background: linear-gradient(to right, rgb(68, 105, 68) , transparent);
+}
+[class^="link_"][aria-label*="(direct message)"]:has([aria-label*="Idle"]) {
+    background: linear-gradient(to right, rgb(135, 105, 75) , transparent);
+}
+[class^="link_"][aria-label*="(direct message)"]:has([aria-label*="Offline"]) {
+    background: linear-gradient(to right, rgb(66, 66, 66) , transparent);
+}
+[class^="link_"][aria-label*="(direct message)"]:has([aria-label*="Do Not Disturb"]) {
+    background: linear-gradient(to right, rgb(130,70,70) , transparent);
+}
+[class^="link_"][aria-label*="(direct message)"]:has([aria-label*="Streaming"]) {
+    background: linear-gradient(to right, rgb(63, 33, 88) , transparent);
+}
+[class^="link_"][aria-label*="(group message)"] {
+    background: linear-gradient(to right, rgb(55, 55, 55) , transparent);
+}
