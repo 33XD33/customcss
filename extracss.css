@@ -474,3 +474,8 @@ div[class^=jumpToPresentBar] {
 
 /* White Noti Lines */
 .item_c4cd66{display:none}
+
+
+/*Hide "Active Now" in Friends List*/
+[class*="nowPlayingColumn"]
+{display: none;}
