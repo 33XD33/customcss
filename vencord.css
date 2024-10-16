@@ -113,8 +113,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 .expandedFolderIconWrapper_bc7085::after,
 .closedFolderIconWrapper_bc7085::after {
-    content: "★⋆";
-    background-color: #ffffff;
+    content: "";
+    background-color: #e6e6e6;
     width: 24px;
     height: 24px;
     position: absolute;
@@ -146,7 +146,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 :root{
 --discord-icon: none; /* discord icon */
 --home-icon: block; /* moon icon */
---home-icon-url: url('https://i.imgur.com/VkESwP5.png');
+--home-icon-url: url('https://i.imgur.com/w55Moxr.png');
 }
 
 [class*=childWrapper] > svg:not([class*=favoriteIcon]){
@@ -156,8 +156,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 90%;
-    height: 90%;
+    width: 80%;
+    height: 80%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -202,8 +202,9 @@ main[class^="chatContent_"] form[class^="form_"]::before {
   font-size: 0;
   &:after {
     font-size: large;
+    letter-spacing:2px;
     font-family: Old London;
-    content: "ACTIVE USERS - ACTIVE SERVERS";
+    content: "ACTIVE USERS";
   }
 }
 
@@ -216,6 +217,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 .placeholder_a552a6:before{
   font-size: medium;
     white-space:nowrap;
+    letter-spacing:2px;
     font-family: Old London;
     content:"I AM TYPING HERE . . . . . . . . . . . . .";
     word-spacing:initial;
@@ -225,6 +227,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 /* Add New Below */
+
 
 
 
