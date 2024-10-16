@@ -479,3 +479,16 @@ div[class^=jumpToPresentBar] {
 /*Hide "Active Now" in Friends List*/
 [class*="nowPlayingColumn"]
 {display: none;}
+
+
+/* Server swipe left */
+.guilds_a4d4d9{
+    transition-property:width, opacity;
+    transition-duration: 0.55s;
+    width:20px;
+    opacity:0;}
+
+.guilds_a4d4d9:hover{
+    width:70px;
+    opacity:1;
+}
