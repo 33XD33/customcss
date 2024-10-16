@@ -1010,3 +1010,15 @@ body.folderContentIsOpen_zz6FgW .base_a4d4d9 {
 .accountProfilePopoutWrapper_b2ca13 {
   left: 0;
 }
+
+
+/* Active Now Text */
+.nowPlayingColumn_c2739c [data-text-variant="heading-lg/semibold"] {
+  font-size: 0;
+  &:after {
+    font-size: large;
+    letter-spacing:2px;
+    font-family: Old London;
+    content: "ACTIVE USERS";
+  }
+}
