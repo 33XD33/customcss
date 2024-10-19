@@ -1,8 +1,7 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
-@import url("https://raw.githubusercontent.com/burdenss/customcss/main/nitrohideandspotifyplayer.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/discordicon.css");
-@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/horizontalserverlist.css");
 
 
 /* Discord Call Top Left */
@@ -163,7 +162,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 /* Add New Below */
-
 
 
 
