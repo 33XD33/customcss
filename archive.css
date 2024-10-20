@@ -1022,3 +1022,21 @@ body.folderContentIsOpen_zz6FgW .base_a4d4d9 {
     content: "ACTIVE USERS";
   }
 }
+
+/* Read All Text Editor */
+button[class^="vc-ranb"] div[class^="contents_"] {
+    visibility: hidden;
+}
+
+
+button[class^="vc-ranb"] div[class^="contents_"]::after {
+    content: "R-A";
+    visibility: visible;
+    display: block;
+    position: absolute;
+    font-family:Old London;
+    font-size: 16px;
+    padding: 24px;
+    top: -16px;
+    right:-4px;
+}
