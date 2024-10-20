@@ -471,7 +471,7 @@ div[class^=jumpToPresentBar] {
 /* Server swipe left */
 .guilds_a4d4d9{
     transition-property:width, opacity;
-    transition-duration: 0.55s;
+    transition-duration: 0.25s;
     width:20px;
     opacity:0;}
 
