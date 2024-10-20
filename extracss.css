@@ -532,13 +532,12 @@ div[class^=jumpToPresentBar] {
 }
 
 
-/* Active Now Text */
-.nowPlayingColumn_c2739c [data-text-variant="heading-lg/semibold"] {
-  font-size: 0;
-  &:after {
-    font-size: large;
-    letter-spacing:2px;
-    font-family: Old London;
-    content: "ACTIVE USERS";
-  }
+/* Red Server Noti Badge Removed */
+[class^="listItem_"] [class^="wrapper_"] {
+    > [class^="lowerBadge_"] {
+        display: none!important;
+    }
+    > svg > mask > use[href*="lower"] {
+        display: none;
+    }
 }
