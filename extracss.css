@@ -547,7 +547,6 @@ div[class^=jumpToPresentBar] {
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
     max-width: unset !important; /* allow it to be larger */ }
 
-
 /* oneko sleeping on ur message bar */
 [class^="channelTextArea"]::after {
     content: "";
