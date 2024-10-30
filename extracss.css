@@ -361,7 +361,7 @@ display: none;
             background-color: var(--bg-base-tertiary);
     }
 }
-.attachedBars_d0696b >div >div {
+.stackedBars_bdf0de >div >div {
     position: relative;
     border-radius: 8px!important;
     bottom: 20px;
@@ -546,4 +546,3 @@ div[class^=jumpToPresentBar] {
 /* Server Tooltop and Entire Server Text */
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
     max-width: unset !important; /* allow it to be larger */ }
-
