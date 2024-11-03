@@ -4,7 +4,7 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/discordicon.css");
 
 
-/* Discord Buttons and Aniamations */
+/* Discord Call Top Left */
 .panels_a4d4d9 > .container_b2ca13 .flex_dc333f > :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
@@ -40,36 +40,17 @@
 }
 
 [href="/channels/@me"]::after {
-  content: "　　H-O-M-E　　";
+  content: "Home　　　　　　　　　　";
   line-height: 80px;
   font-weight: 290;
-  font-size: 20px; 
+  font-size: 24px; 
+  letter-spacing:0.5px;
   font-family: Old London;
   /* color:  black */
   visibility: visible;
   position: absolute;
-  left: 35px;
+  left: 10px;
 }
-
-
-/* Read All Text Editor */
-button[class^="vc-ranb"] div[class^="contents_"] {
-    visibility: hidden;
-}
-
-
-button[class^="vc-ranb"] div[class^="contents_"]::after {
-    content: "R-A";
-    visibility: visible;
-    display: block;
-    position: absolute;
-    font-family:Old London;
-    font-size: 16px;
-    padding: 24px;
-    top: -16px;
-    right:-4px;
-}
-
 
 /* Custom Discord icon using image */
 :root {
@@ -128,12 +109,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-* Change voice activity indicator glow color */
-.theme-dark [class*=avatarSpeaking_] {
-    box-shadow: 0 0 0 2px #ffffff; /* Change #color to your desired border color */
-}
-
-
 /* Remove Top Left Discord Icon */
 .wordmark_a934d8{pointer-events:unset;padding:0}
 .wordmark_a934d8>svg{display:none}
@@ -154,7 +129,7 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     white-space:nowrap;
     letter-spacing:2px;
     font-family: Old London;
-    content:"I AM TYPING HERE . . . . . . . . . . . . .";
+    content:"";
     word-spacing:initial;
 }
 
@@ -162,7 +137,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 /* Add New Below */
-
 
 
 
