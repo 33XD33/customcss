@@ -2,21 +2,23 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 @import url("https://raw.githubusercontent.com/gold-me/DiscordIcons/refs/heads/master/DiscordIcons.theme.css");
+@import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
 
 
-/* Discord Call Top Left */
-.panels_a4d4d9 > .container_b2ca13 .flex_dc333f > :not(:last-child) {
+
+/* Side Left */
+.panels_c48ade > .container__37e49 .flex__7c0ba > :not(:last-child) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.2s ease-in-out;
 }
 /* Reveal mute and Deafen buttons when settings button is hovered */
-.panels_a4d4d9 > .container_b2ca13 .flex_dc333f:hover > :not(:last-child) {
+.panels_c48ade > .container__37e49 .flex__7c0ba:hover > :not(:last-child) {
   opacity: 100% !important;
   width: 35px;
 }
 /* Resize and move the profile button to take up all the space it can to look clean. */
-.avatarWrapper_b2ca13{
+.avatarWrapper__37e49{
   transition: all 0.2s ease-in-out;
   width: 100%!important;
   margin-left: -12px;
@@ -24,7 +26,7 @@
   border-radius: 0!important;
 }
 /* Move the avatar back to the right a bit to look clean. */
-.avatarWrapper_b2ca13 .avatar_b2ca13{
+.avatarWrapper__37e49 .avatar__37e49{
   margin-left: 10px;
 }
 
@@ -35,7 +37,7 @@
   position: relative;
 }
 
-.linkButtonIcon_c91bad:has(path[d^="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56"]) {
+.linkButtonIcon__972a0:has(path[d^="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56"]) {
   visibility: visable !important;
 }
 
@@ -104,15 +106,15 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     mask: var(--home-icon-url) center/contain no-repeat !important;
 }
 
-.form_a7d72e::after {
+.form_f75fb0::after {
   display: none;
 }
 
 
 /* Remove Top Left Discord Icon */
-.wordmark_a934d8{pointer-events:unset;padding:0}
-.wordmark_a934d8>svg{display:none}
-.wordmark_a934d8::after{position:absolute;top:4px;padding:2px 9px 3px;font-size:14px;letter-spacing:.9px;white-space:nowrap;font-family:Old London;content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
+.wordmark__421ed{pointer-events:unset;padding:0}
+.wordmark__421ed>svg{display:none}
+.wordmark__421ed::after{position:absolute;top:4px;padding:2px 9px 3px;font-size:14px;letter-spacing:.9px;white-space:nowrap;font-family:Old London;content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
 :root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
 
 :root {
@@ -120,11 +122,11 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 /* Text Editor Typing Area */
-.placeholder_a552a6 {
+.placeholder__1b31f {
   font-size: 0;
 }
 
-.placeholder_a552a6:before{
+.placeholder__1b31f:before{
   font-size: medium;
     white-space:nowrap;
     letter-spacing:2px;
@@ -132,7 +134,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     content:"";
     word-spacing:initial;
 }
-
 
 
 
