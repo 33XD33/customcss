@@ -11,8 +11,8 @@
 [class*=unreadMentionsFixedFooter_]{bottom: 0px !important;}
 [class^=footer_]
 {display: none; }
-div.listItem_c96c45:has(div[aria-label="Explore Discoverable Servers"]), 
-div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-button"]) 
+div.listItem__650eb:has(div[aria-label="Explore Discoverable Servers"]), 
+div.tutorialContainer__650eb:has(div[data-list-item-id="guildsnav___create-join-button"]) 
 {display: none !important;}
 
 
@@ -53,9 +53,9 @@ div.tutorialContainer_c96c45:has(div[data-list-item-id="guildsnav___create-join-
 
 
 /*Support icon in toolbar*/
-.toolbar_fc4f04 .anchor_af404b[href="https://support.discord.com"],
+.toolbar__9293f .anchor_edefb8[href="https://support.discord.com"],
 /* Bell icon/notification settings*/
-.iconWrapper_fc4f04:has(path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"],
+.iconWrapper__9293f:has(path[d^="M1.3 21.3a1 1 0 1 0 1.4 1.4l20-20a1"],
 /*Add friends to dm*/
 path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5"],
 /*enable camera in dm*/
@@ -64,25 +64,25 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Remove Activty Button*/
-.buttonContainer_b6e2f9 {
+.buttonContainer__1405b {
   display: none;
 }
 
 
 /* Remove Small Dots and Reply Arrow*/
-.buttons_d5deea {
+.buttons__5126c {
  display: none;
 }
 
 
 /* Remove Share Screen Left*/
-.actionButtons_adcaac {
+.actionButtons_e131a9 {
  display: none;
 }
 
 
 /* Remove Search Convo*/
-.searchBar_f0963d {
+.searchBar__35e86 {
  display: none;
 }
 
@@ -95,11 +95,11 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Search Bar Compact */
-.search_ff5f90{order:var(--search-order, 1)}.search_ff5f90 .searchBar_a46bef{background:rgba(0,0,0,0)}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)){width:24px}.search_ff5f90 .searchBar_a46bef:not(:focus-within,:hover,:has(.clear_effbe2)) .iconContainer_effbe2{width:24px;height:24px;cursor:pointer}
+.search__49676{order:var(--search-order, 1)}.search__49676 .searchBar__97492{background:rgba(0,0,0,0)}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)){width:24px}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)) .iconContainer_fea832{width:24px;height:24px;cursor:pointer}
 
 
 /* Flip Camera */
-.mirror_a5989d {
+.mirror__48b20 {
     transform: scaleX(1);
 }
 
@@ -114,14 +114,14 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Hide Noise Suppression Icon In Call*/
-.button_adca65:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
+.button__67645:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
   display: none
 }
 
 
 /* Hide Server Banner */
- .animatedContainer_fd6364,
-.content_eed6a8 [style="height: 84px;"]{
+ .animatedContainer_f37cb1,
+.content__99f8c [style="height: 84px;"]{
     display: none
 }
 
@@ -142,12 +142,12 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Reactions Hover */
-[class^=reaction_]:not(:has(.burstGlow_ec6b19)) .emoji {
+[class^=reaction_]:not(:has(.burstGlow__23977)) .emoji {
     transition: transform 0.6s ease;
     transform-style: preserve-3d; /* Enables 3D transformations */
 }
 
-[class^=reaction_]:not(:has(.burstGlow_ec6b19)):hover .emoji {
+[class^=reaction_]:not(:has(.burstGlow__23977)):hover .emoji {
     animation: flipAndScale 0.6s forwards;
 }
 
@@ -163,13 +163,13 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Call Icon Buttons */
-.wrapper_b6e2f9 button{
+.wrapper__1405b button{
     background-color: rgba(197, 197, 197, 0.685) !important; 
 }
-.wrapper_b6e2f9 div foreignObject  {
+.wrapper__1405b div foreignObject  {
     mask-image:none;
 }
-.wrapper_b6e2f9 .contextMenuNub_ef18ee{
+.wrapper__1405b .contextMenuNub_f1ceac{
     display:none;
 }
 
@@ -205,15 +205,15 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 /* Server shortcuts as Icons */
-.basicChannelRowLink_d8bfb3 .name_d8bfb3{
+.basicChannelRowLink__2ea32 .name__2ea32{
   display: none;
 }
-li:not([class]):has(.basicChannelRowLink_d8bfb3),
-div:not([class]):has(.basicChannelRowLink_d8bfb3) {
+li:not([class]):has(.basicChannelRowLink__2ea32),
+div:not([class]):has(.basicChannelRowLink__2ea32) {
     width: min-content;
     display: inline-flex;
 }
-.basicChannelRowLink_d8bfb3 .icon_d8bfb3{
+.basicChannelRowLink__2ea32 .icon__2ea32{
   margin-left: 0px;
   margin-top: 0px;
   scale: 1;
@@ -263,10 +263,10 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
 
 
 /* Centered Voice Controls */
-.bottomControls_dd069c > .flex_dc333f:is(:first-child, :last-child) {
+.bottomControls_bfe55a > .flex__7c0ba:is(:first-child, :last-child) {
   flex: 1 1 50% !important;
 }
-.bottomControls_dd069c > .flex_dc333f:nth-child(2) {
+.bottomControls_bfe55a > .flex__7c0ba:nth-child(2) {
   flex: 0 1 auto !important;
 }
 
@@ -340,7 +340,7 @@ div:not([class]):has(.basicChannelRowLink_d8bfb3) {
 
 
 /* Image Activity Icon */
-.hoverButtonGroup_d0395d {
+.hoverButtonGroup__06ab4 {
     display: none
 }
 
@@ -357,21 +357,21 @@ display: none;
     border-radius: 0px;
     background-color: var(--bg-base-tertiary);
     padding: 6px;
-    > div > div:not(.typingDots_d7ebeb), > div > div > div {
+    > div > div:not(.typingDots_b88801), > div > div > div {
             background-color: var(--bg-base-tertiary);
     }
 }
-.stackedBars_bdf0de >div >div {
+.stackedBars__74017 >div >div {
     position: relative;
     border-radius: 8px!important;
     bottom: 20px;
 }
-.typing_d7ebeb {
+.typing_b88801 {
     bottom: var(--custom-channel-textarea-text-area-height);
     background-color: none!important;
 }
 
-.typingDots_d7ebeb {
+.typingDots_b88801 {
     background-color: none!important;
 }
 
@@ -431,21 +431,21 @@ div[class^=jumpToPresentBar] {
 
 
 /* Change the first path definition of the volume icon SVG to be the moving part of my new animated SVG */
-.containerDefault_f6f816:has([class*="voiceUser_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M15.16"] {
+.containerDefault_c69b6d:has([class*="voiceUser_"]) .iconContainer__2ea32 svg.icon__2ea32 path[d^="M15.16"] {
     d: path("M15.1 20.75c-.58.14-1.1-.33-1.1-.92v-.03c0-.5.37-.92.85-1.05a7 7 0 0 0 0-13.5A1.11 1.11 0 0 1 14 4.2v-.03c0-.6.52-1.06 1.1-.92a9 9 0 0 1 0 17.5Z");
     animation-name: volume-icon-anim;
     animation-duration: 1.25s;
     animation-iteration-count: infinite;
 }
 /* Change the second path definition of the volume icon SVG to be the static part of my new animated SVG */
-.containerDefault_f6f816:has([class*="voiceUser_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M12"] {
+.containerDefault_c69b6d:has([class*="voiceUser_"]) .iconContainer__2ea32 svg.icon__2ea32 path[d^="M12"] {
     d: path("M12 3a1 1 0 0 0-1-1h-.06a1 1 0 0 0-.74.32L5.92 7H3a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2.92l4.28 4.68a1 1 0 0 0 .74.32H11a1 1 0 0 0 1-1V3ZM15.16 16.51c-.57.28-1.16-.2-1.16-.83v-.14c0-.43.28-.8.63-1.02a3 3 0 0 0 0-5.04c-.35-.23-.63-.6-.63-1.02v-.14c0-.63.59-1.1 1.16-.83a5 5 0 0 1 0 9.02Z");
 }
 /* change color of animation to match Discord's "Live" icon when someone is live-streaming */
-.containerDefault_f6f816:has([class*="live_"], [class*="baseShapeRound_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M15.16"] {
+.containerDefault_c69b6d:has([class*="live_"], [class*="baseShapeRound_"]) .iconContainer__2ea32 svg.icon__2ea32 path[d^="M15.16"] {
     animation-name: volume-icon-anim-live;
 }
-.containerDefault_f6f816:has([class*="live_"], [class*="baseShapeRound_"]) .iconContainer_d8bfb3 svg.icon_d8bfb3 path[d^="M12"] {
+.containerDefault_c69b6d:has([class*="live_"], [class*="baseShapeRound_"]) .iconContainer__2ea32 svg.icon__2ea32 path[d^="M12"] {
     color: var(--red-400);
 }
 /* Animation when there is someone in a voice channel */
@@ -460,7 +460,7 @@ div[class^=jumpToPresentBar] {
 }
 
 /* White Noti Lines */
-.item_c4cd66{display:none}
+.item__58105{display:none}
 
 
 /*Hide "Active Now" in Friends List*/
@@ -469,22 +469,22 @@ div[class^=jumpToPresentBar] {
 
 
 /* Server swipe left */
-.guilds_a4d4d9{
+.guilds_c48ade{
     transition-property:width, opacity;
     transition-duration: 0.25s;
     width:20px;
     opacity:0;}
 
-.guilds_a4d4d9:hover{
+.guilds_c48ade:hover{
     width:70px;
     opacity:1;
 }
 
 /* User Area Icon Recolor */
-.panels_a4d4d9 .lottieIcon_f73ef7 :not(defs *)[fill][fill-opacity] {
+.panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
   fill: rgb(255, 255, 255);
 }
-.lottieIcon_f73ef7 > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
+.lottieIcon__5eb9b > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
   stroke: rgb(255, 255, 255);
 }
 
@@ -495,11 +495,11 @@ div[class^=jumpToPresentBar] {
 
 
 /* Transparent Folders Left */
-.expandedFolderIconWrapper_bc7085 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
+.expandedFolderIconWrapper__48112 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
     scale: 10;
 }
-.expandedFolderIconWrapper_bc7085::after,
-.closedFolderIconWrapper_bc7085::after {
+.expandedFolderIconWrapper__48112::after,
+.closedFolderIconWrapper__48112::after {
     content: "";
     background-color: #e6e6e6;
     width: 24px;
@@ -507,27 +507,27 @@ div[class^=jumpToPresentBar] {
     position: absolute;
     clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
 }
-.closedFolderIconWrapper_bc7085 > .guildIcon_bc7085 {
+.closedFolderIconWrapper__48112 > .guildIcon__48112 {
     opacity: .4;
     filter: blur(2px);
 }
-.theme-dark .folder_bc7085[aria-expanded="false"] {
+.theme-dark .folder__48112[aria-expanded="false"] {
     background-color: #ffffff11;
 }
-.theme-light .folder_bc7085[aria-expanded="false"] {
+.theme-light .folder__48112[aria-expanded="false"] {
     background-color: #000000;
 }
 
 /*Other People Speaking Icons Inside Voice Channel*/
-.border_ba4b17.speaking_ba4b17 {
+.border__2f4f7.speaking__2f4f7 {
     box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ffffff), inset 0 0 0 3px var(--black-500);
 }
 /*Other People Speaking Icon In The List When Speaking*/
-.avatarSpeaking_d80634 {
+.avatarSpeaking__07f91 {
     box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ffffff), inset 0 0 0 3px var(--background-secondary);
 }
 /*Your Icon When Speaking*/
-#app-mount .avatarSpeaking_c51b4e {
+#app-mount .avatarSpeaking__44b0c {
     box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ffffff), inset 0 0 0 3px var(--background-secondary);
 }
 
@@ -793,7 +793,7 @@ div[class^=jumpToPresentBar] {
   }
   /* acrylic + pastel rgb footer */ 
   
-  .footer_d8e2d0 {
+  .footer__4d95d {
       background: linear-gradient(135deg, 
           rgba(255, 183, 197, 0.6),  
           rgba(255, 223, 186, 0.6),  
