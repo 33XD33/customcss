@@ -851,3 +851,15 @@ div[class^=jumpToPresentBar] {
           transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
           transform: translateY(-4px);
   }
+
+
+/* Make user profiles larger  */ 
+div[aria-label="User Profile Modal"] {
+  transform: scale(1.00);
+  > div[class^="root_"] {
+    max-height: 60rem;
+    > div {
+      height: 100%;
+    }
+  }
+}
