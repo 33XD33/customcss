@@ -4,29 +4,30 @@
 
 
 
-/* Side Left */
-.panels_c48ade > .container__37e49 .flex__7c0ba > :not(:last-child) {
-  opacity: 0% !important;
-  width: 0px;
-  transition: all 0.2s ease-in-out;
-}
-/* Reveal mute and Deafen buttons when settings button is hovered */
-.panels_c48ade > .container__37e49 .flex__7c0ba:hover > :not(:last-child) {
-  opacity: 100% !important;
-  width: 35px;
-}
-/* Resize and move the profile button to take up all the space it can to look clean. */
-.avatarWrapper__37e49{
-  transition: all 0.2s ease-in-out;
-  width: 100%!important;
-  margin-left: -12px;
-  height: 53px;
-  border-radius: 0!important;
-}
-/* Move the avatar back to the right a bit to look clean. */
-.avatarWrapper__37e49 .avatar__37e49{
-  margin-left: 10px;
-}
+/* Mute, Deafon & Slide Buttons */
+.container__37e49 .buttons__37e49 > :not(:last-child) {
+    opacity: 0% !important;
+    width: 0px;
+    transition: all 0.2s ease-in-out;
+  }
+  /* Reveal mute and Deafen buttons when settings button is hovered */
+  .container__37e49 .buttons__37e49:hover > :not(:last-child) {
+    opacity: 100% !important;
+    width: 35px;
+  }
+  /* Resize and move the profile button to take up all the space it can to look clean. */
+  .avatarWrapper__37e49{
+    transition: all 0.2s ease-in-out;
+    width: 100%!important;
+    margin-left: -12px;
+    height: 53px;
+    border-radius: 0!important;
+  }
+  /* Move the avatar back to the right a bit to look clean. */
+  .avatarWrapper__37e49 .avatar__37e49{
+    margin-left: 10px;
+  }
+
 
 
 /* Friends to Home */
