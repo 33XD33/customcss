@@ -8,12 +8,12 @@
 .container__37e49 .buttons__37e49 > :not(:last-child) {
     opacity: 0% !important;
     width: 0px;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.4s ease-in-out;
   }
   /* Reveal mute and Deafen buttons when settings button is hovered */
   .container__37e49 .buttons__37e49:hover > :not(:last-child) {
     opacity: 100% !important;
-    width: 35px;
+    width: 32px;
   }
   /* Resize and move the profile button to take up all the space it can to look clean. */
   .avatarWrapper__37e49{
@@ -132,6 +132,24 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     font-family: Old London;
     content:"";
     word-spacing:initial;
+}
+
+
+/* Image Loading (Test) */
+.content_a2f514 {
+    display: flex;
+    flex-direction: column;
+    > .spinner_a2f514 { display: none }
+    &:before {
+        display: block;
+        height: 28px;
+        position: relative;
+        content: url(https://media.giphy.com/media/ckT59CvStmUsU/giphy.gif?cid=ecf05e47b4ryql72u4y4shb8bib3j9a7aarege3qiphwu0uk&ep=v1_gifs_search&rid=giphy.gif&ct=g);
+        image-rendering: pixelated;
+         align-content: center;
+         scale: 1.125;
+         margin-bottom: 350px;
+    }
 }
 
 
