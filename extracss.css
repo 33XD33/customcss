@@ -32,6 +32,9 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .buttonContainer__1405b {
   display: none;
 }
+.tutorialContainer__650eb,
+.tutorialContainer__650eb+div{display: none;
+}
 
 
 /* Remove Small Dots and Reply Arrow*/
