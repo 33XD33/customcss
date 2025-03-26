@@ -1053,3 +1053,18 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
     width:70px;
     opacity:1;
 }
+
+
+/* Text Editor Typing Area */
+.placeholder__1b31f {
+  font-size: 0;
+}
+
+.placeholder__1b31f:before{
+  font-size: medium;
+    white-space:nowrap;
+    letter-spacing:0px;
+    font-family: Old London;
+    content:"";
+    word-spacing:initial;
+}
