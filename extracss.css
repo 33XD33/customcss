@@ -311,37 +311,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
 }
 
 
-/* New Refreshed Chat */
-[class*="AppLauncher"] {
-display: none;
-}
-
-.visual-refresh [class^="form_"] {
-    border: 0px;
-    border-top: 1px solid var(--border-subtle);
-    margin: 00px;
-    border-radius: 0px;
-    background-color: var(--bg-base-tertiary);
-    padding: 6px;
-    > div > div:not(.typingDots_b88801), > div > div > div {
-            background-color: var(--bg-base-tertiary);
-    }
-}
-.stackedBars__74017 >div >div {
-    position: relative;
-    border-radius: 8px!important;
-    bottom: 20px;
-}
-.typing_b88801 {
-    bottom: var(--custom-channel-textarea-text-area-height);
-    background-color: none!important;
-}
-
-.typingDots_b88801 {
-    background-color: none!important;
-}
-
-
 /* jump to present */
 div[class^=jumpToPresentBar] {
   left: 0; right: unset;
