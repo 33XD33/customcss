@@ -16,41 +16,6 @@ div.tutorialContainer__650eb:has(div[data-list-item-id="guildsnav___create-join-
 {display: none !important;}
 
 
-/* Main icons Transparent :hover */
-:root:root {
-    --accent-h: 235%;
-    --accent-s: 0%;
-    --accent-l: 0%;
-
-    --brand-100-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 13));
-    --brand-130-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 12));
-    --brand-160-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 11));
-    --brand-200-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 10));
-    --brand-230-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 9));
-    --brand-260-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 8));
-    --brand-300-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 7));
-    --brand-330-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 6));
-    --brand-345-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 5));
-    --brand-360-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 4));
-    --brand-400-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 3));
-    --brand-430-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + (3.6% * 2));
-    --brand-460-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) + 3.6);
-    --brand-500-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) var(--accent-l);
-    --brand-530-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - 3.6);
-    --brand-560-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 2));
-    --brand-600-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 3));
-    --brand-630-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 4));
-    --brand-660-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 5));
-    --brand-700-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 6));
-    --brand-730-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 7));
-    --brand-760-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 8));
-    --brand-800-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 9));
-    --brand-830-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 10));
-    --brand-860-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 11));
-    --brand-900-hsl: var(--accent-h) calc(var(--saturation-factor, 1)*var(--accent-s)) calc(var(--accent-l) - (3.6% * 12));
-}
-
-
 
 /*Support icon in toolbar*/
 .toolbar__9293f .anchor_edefb8[href="https://support.discord.com"],
@@ -95,7 +60,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 
 
 /* Search Bar Compact */
-.search__49676{order:var(--search-order, 1)}.search__49676 .searchBar__97492{background:rgba(0,0,0,0)}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)){width:24px}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)) .iconContainer_fea832{width:24px;height:24px;cursor:pointer}
+.search__49676{order:var(--search-order, 1)}.search__49676 .searchBar__97492{background:rgba(0,0,0,0)}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)){width:30px}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)) .iconContainer_fea832{width:20px;height:20px;left:-4px;cursor:pointer}
 
 
 /* Flip Camera */
@@ -172,8 +137,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .wrapper__1405b .contextMenuNub_f1ceac{
     display:none;
 }
-
-
 
 
 /* Hide Avatar Decoration */
@@ -353,7 +316,7 @@ display: none;
 .visual-refresh [class^="form_"] {
     border: 0px;
     border-top: 1px solid var(--border-subtle);
-    margin: 0px;
+    margin: 00px;
     border-radius: 0px;
     background-color: var(--bg-base-tertiary);
     padding: 6px;
@@ -388,9 +351,9 @@ form > div[class^=submitContainer] {
   > div > div[class^=channelTextArea] {
     margin: 0px !important;
     > div[class^=scrollableContainer] {
-      min-height: 49px;
+      min-height: 0px;
       padding-top: 4px;
-      border-radius: 0px;
+      border-radius: 10px;
     }
   }
   /* align forum channel thing */
