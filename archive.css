@@ -1040,3 +1040,16 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
     top: -16px;
     right:-4px;
 }
+
+
+/* Server swipe left */
+.guilds_c48ade{
+    transition-property:width, opacity;
+    transition-duration: 0.25s;
+    width:20px;
+    opacity:0;}
+
+.guilds_c48ade:hover{
+    width:70px;
+    opacity:1;
+}
