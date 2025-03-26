@@ -467,19 +467,6 @@ div[class^=jumpToPresentBar] {
 [class*="nowPlayingColumn"]
 {display: none;}
 
-
-/* Server swipe left */
-.guilds_c48ade{
-    transition-property:width, opacity;
-    transition-duration: 0.25s;
-    width:20px;
-    opacity:0;}
-
-.guilds_c48ade:hover{
-    width:70px;
-    opacity:1;
-}
-
 /* User Area Icon Recolor */
 .panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
   fill: rgb(255, 255, 255);
