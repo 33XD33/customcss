@@ -1,6 +1,7 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
 @import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
+@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/settingswindow.css");
 
 
 
@@ -8,7 +9,7 @@
 .container__37e49 .buttons__37e49 > :not(:last-child) {
     opacity: 0% !important;
     width: 0px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
   /* Reveal mute and Deafen buttons when settings button is hovered */
   .container__37e49 .buttons__37e49:hover > :not(:last-child) {
@@ -17,17 +18,16 @@
   }
   /* Resize and move the profile button to take up all the space it can to look clean. */
   .avatarWrapper__37e49{
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
     width: 100%!important;
     margin-left: -12px;
-    height: 53px;
-    border-radius: 0!important;
+    height: 0px;
+    border-radius: px !important;
   }
   /* Move the avatar back to the right a bit to look clean. */
   .avatarWrapper__37e49 .avatar__37e49{
-    margin-left: 10px;
+    margin-left: px;
   }
-
 
 
 /* Friends to Home */
@@ -52,6 +52,7 @@
   position: absolute;
   left: 10px;
 }
+
 
 /* Custom Discord icon using image */
 :root {
@@ -90,7 +91,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 --home-icon: block; /* moon icon */
 --home-icon-url: url('https://i.imgur.com/w55Moxr.png');
 }
-
 [class*=childWrapper] > svg:not([class*=favoriteIcon]){
   display: var(--discord-icon);
 }
@@ -98,8 +98,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     content: '';
     display: var(--home-icon);
     position: absolute;
-    width: 80%;
-    height: 80%;
+    width: 85%;
+    height: 85%;
     background: var(--text-normal);
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
@@ -120,18 +120,10 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --modtitle-text: "" !important;
 }
 
+
 /* Text Editor Typing Area */
 .placeholder__1b31f {
   font-size: 0;
-}
-
-.placeholder__1b31f:before{
-  font-size: medium;
-    white-space:nowrap;
-    letter-spacing:2px;
-    font-family: Old London;
-    content:"";
-    word-spacing:initial;
 }
 
 
@@ -154,7 +146,55 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 
+
+
+
 /* Add New Below */
 
 
 
+
+
+
+/* Fixed Chat Allignment */
+.visual-refresh {
+    --custom-channel-textarea-text-area-height: 56px;
+    .form_f75fb0 {
+        display: flex;
+        flex-direction: column;
+    }
+    .channelTextArea_f75fb0 {
+        margin-bottom: 8px;
+    }
+    .base_b88801 {
+        position: static;
+        order: -1;
+    }
+}
+
+/* Hotfix Theme */
+:root {
+    --custom-theme-background:      hsl(0, 0%, 0%); /* primary theme color                                           */
+    --custom-theme-primary-color:   hsl(0, 0%, 0%); /* influences border color, dark buttons and like thats it       */
+    --custom-theme-secondary-color: hsl(0, 0%, 0%); /* also influences border                                        */
+    --theme-base-color-dark:        hsl(0, 0%, 0%); /* influences everything else not mentioned here                 */
+    --theme-base-color-amount:            100%;              /*  ^ by how much? set this low, like 25%                        */
+    --theme-base-color-dark-hsl:          216  100%  50%   ; /* make this the same as theme-base-color-dark                   */
+    --theme-text-color-dark:        hsl(0, 0%, 100%); /* themes all text on page                                       */
+    --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
+    --bg-overlay-selected:          hwb(0 11% 89%); /* the selected channel/dm                                       */
+}
+
+
+/* Remove Channel Numbbers */
+.containerDefault_c69b6d {
+  .children__2ea32 {
+    opacity: 0;
+    margin-right: -32px;
+  }
+  &:hover {
+    .children__2ea32 {
+      opacity: 1;
+      margin-right: 0px;
+    }
+  }
