@@ -441,48 +441,14 @@ div[aria-label="User Profile Modal"] {
 }
 
 
-/* New Refreshed Chat */
- [class*="AppLauncher"] {
- display: none;
- }
- 
- .visual-refresh [class^="form_"] {
-     border: 10px;
-     border-top: 0px solid var(--border-subtle);
-     margin:0px;
-     border-radius: 0px;
-     background-color: var(--bg-base-tertiary);
-     padding: 4px;
-     > div > div:not(.typingDots_b88801), > div > div > div {
-             background-color: var(--bg-base-tertiary);
-     }
- }
- .stackedBars__74017 >div >div {
-     position: relative;
-     border-radius: 8px!important;
-     bottom: 20px;
- }
- .typing_b88801 {
-     bottom: var(--custom-channel-textarea-text-area-height);
-     background-color: none!important;
- }
- 
- .typingDots_b88801 {
-     background-color: none!important;
- }
+/* Server Round */
+.wrapper_cc5dd2 {
+    .icon__6e9f8 {
+        border-radius: 100px!important;
+    }
+}
 
- :is(main,section)[class^=chatContent] > form,
- form > div[class^=submitContainer] {
-   /* align chatbox */
-   padding: 0px;
-   > div > div[class^=channelTextArea] {
-     margin: 0px !important;
-     > div[class^=scrollableContainer] {
-       min-height: 8px;
-       padding-top: 4px;
-       border-radius: 0px;
-     }
-   }
-   /* align forum channel thing */
-   > div { margin-bottom: 5px; border-radius: 0px; }
-   
+
+/* Inbox & Help Icon */
+.recentsIcon_c99c29, .trailing_c38106 [href="https://support.discord.com"]{display: none;
+}
