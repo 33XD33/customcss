@@ -151,27 +151,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 /* Add New Below */
 
-
-
-
-
-
-/* Fixed Chat Allignment */
-.visual-refresh {
-    --custom-channel-textarea-text-area-height: 56px;
-    .form_f75fb0 {
-        display: flex;
-        flex-direction: column;
-    }
-    .channelTextArea_f75fb0 {
-        margin-bottom: 8px;
-    }
-    .base_b88801 {
-        position: static;
-        order: -1;
-    }
-}
-
 /* Hotfix Theme */
 :root {
     --custom-theme-background:      hsl(0, 0%, 0%); /* primary theme color                                           */
@@ -184,17 +163,3 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
     --bg-overlay-selected:          hwb(0 11% 89%); /* the selected channel/dm                                       */
 }
-
-
-/* Remove Channel Numbbers */
-.containerDefault_c69b6d {
-  .children__2ea32 {
-    opacity: 0;
-    margin-right: -32px;
-  }
-  &:hover {
-    .children__2ea32 {
-      opacity: 1;
-      margin-right: 0px;
-    }
-  }
