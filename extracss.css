@@ -442,24 +442,6 @@ div[aria-label="User Profile Modal"] {
 }
 
 
-/* Remove Channel Numbbers */
-.containerDefault_c69b6d {
-  .children__2ea32 {
-    opacity: 0;
-    margin-right: -32px;
-  }
-  &:hover {
-    .children__2ea32 {
-      opacity: 1;
-      margin-right: 0px;
-    }
-  }
-
-[class*=form-] [class*=channelAppLauncher_] {
-  display: var(--activity);
-}
-
-
 /* Fixed Chat Allignment */
 .visual-refresh {
     --custom-channel-textarea-text-area-height: 56px;
