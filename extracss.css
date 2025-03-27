@@ -245,7 +245,7 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
 
 
 /* Don't show Chat Apps   */
-.visual-refresh .channelAppLauncher_e6e74f, [href="https://support.discord.com"]{display: none;
+.visual-refresh .channelAppLauncher_e6e74f, .trailing_c38106 [href="https://support.discord.com"]{display: none;
 }
 
 
