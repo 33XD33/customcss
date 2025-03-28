@@ -22,11 +22,11 @@
     width: 100%!important;
     margin-left: -12px;
     height: 0px;
-    border-radius: px !important;
+    border-radius: 0px !important;
   }
   /* Move the avatar back to the right a bit to look clean. */
   .avatarWrapper__37e49 .avatar__37e49{
-    margin-left: px;
+    margin-left: 0px;
   }
 
 
@@ -149,7 +149,10 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 
+
 /* Add New Below */
+
+
 
 /* Hotfix Theme */
 :root {
@@ -163,3 +166,78 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
     --bg-overlay-selected:          hwb(0 11% 89%); /* the selected channel/dm                                       */
 }
+
+/* Kinda Fullscreen */
+.visual-refresh {
+    --vr-header-snippet-top: 0px;
+    --vr-header-snippet-server-padding: 16px;
+    --vr-header-snippet-space: -35px;
+
+    div.subtitleContainer_f75fb0,
+    main.container__133bf {
+        & > section.container__9293f {
+            padding-right: var(--vr-header-snippet-space);
+        }
+    }
+
+    div.page_c48ade {
+        &:not(:has(> div.chat_f75fb0)) {
+            anchor-name: --vr-header-snippet;
+        }
+
+        & > div.chat_f75fb0 {
+            anchor-name: --vr-header-snippet;
+        }
+    }
+
+    div.base_c48ade {
+        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
+
+        &:has(div.bar_c38106 > div.trailing_c38106 > *:nth-child(3)) {
+            & div.subtitleContainer_f75fb0,
+            & main.container__133bf {
+                & > section.container__9293f {
+                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
+                }
+            }
+        }
+
+        & > div.content_c48ade {
+            z-index: 0;
+        }
+
+        & > div.bar_c38106 {
+            position: absolute;
+            position-anchor: --vr-header-snippet;
+            top: var(--vr-header-snippet-top);
+            right: anchor(right);
+            width: anchor-size(width);
+            padding: 0;
+        }
+
+        & div.trailing_c38106 {
+            background: none;
+            border: none;
+            height: var(--custom-channel-header-height);
+        }
+
+        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
+            z-index: 0;
+        }
+    }
+
+    :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
+        right: 0 !important;
+    }
+
+    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
+        margin-top: var(--vr-header-snippet-server-padding);
+    }
+
+    div.topic__6ec1a {
+        -webkit-app-region: no-drag;
+    }
+}
+
+
+
