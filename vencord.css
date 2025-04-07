@@ -1,7 +1,6 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
-@import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/main/src/amoled-cord.css");
-
+@import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/refs/heads/main/clients/amoled-cord.theme.css");
 
 /* Mute, Deafon & Slide Buttons */
 .container__37e49 .buttons__37e49 > :not(:last-child) {
@@ -17,7 +16,7 @@
   /* Resize and move the profile button to take up all the space it can to look clean. */
   .avatarWrapper__37e49{
     transition: all 0.3s ease-in-out;
-    width: 100%!important;
+    width: 100% !important;
     margin-left: -12px;
     height: 0px;
     border-radius: 0px !important;
@@ -72,6 +71,10 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     top: calc(var(--size) - var(--size) - var(--size));
     pointer-events: none;
 }
+.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_c9fddf)) {
+    background-color: transparent !important;
+    background-size: cover;
+}
 
 
 /* i'm new here, say hi! */
@@ -102,7 +105,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     mask-image: var(--home-icon-url) center/contain no-repeat !important;
     mask: var(--home-icon-url) center/contain no-repeat !important;
 }
-
 .form_f75fb0::after {
   display: none;
 }
@@ -152,6 +154,11 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 
+
+
+
+
+
 /* Hotfix Theme */
 :root {
     --custom-theme-background:      hsl(0, 0%, 0%); /* primary theme color                                           */
@@ -162,80 +169,5 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --theme-base-color-dark-hsl:          216  100%  50%   ; /* make this the same as theme-base-color-dark                   */
     --theme-text-color-dark:        hsl(0, 0%, 100%); /* themes all text on page                                       */
     --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
-    --bg-overlay-selected:          hwb(0 11% 89%); /* the selected channel/dm                                       */
+    --bg-overlay-selected:          hwb(0 19% 81%); /* the selected channel/dm                                       */
 }
-
-/* Kinda Fullscreen */
-.visual-refresh {
-    --vr-header-snippet-top: 0px;
-    --vr-header-snippet-server-padding: 16px;
-    --vr-header-snippet-space: -35px;
-
-    div.subtitleContainer_f75fb0,
-    main.container__133bf {
-        & > section.container__9293f {
-            padding-right: var(--vr-header-snippet-space);
-        }
-    }
-
-    div.page_c48ade {
-        &:not(:has(> div.chat_f75fb0)) {
-            anchor-name: --vr-header-snippet;
-        }
-
-        & > div.chat_f75fb0 {
-            anchor-name: --vr-header-snippet;
-        }
-    }
-
-    div.base_c48ade {
-        grid-template-rows: [top] 0 [titleBarEnd] min-content [noticeEnd] 1fr [end];
-
-        &:has(div.bar_c38106 > div.trailing_c38106 > *:nth-child(3)) {
-            & div.subtitleContainer_f75fb0,
-            & main.container__133bf {
-                & > section.container__9293f {
-                    padding-right: calc(var(--vr-header-snippet-space) + 50px);
-                }
-            }
-        }
-
-        & > div.content_c48ade {
-            z-index: 0;
-        }
-
-        & > div.bar_c38106 {
-            position: absolute;
-            position-anchor: --vr-header-snippet;
-            top: var(--vr-header-snippet-top);
-            right: anchor(right);
-            width: anchor-size(width);
-            padding: 0;
-        }
-
-        & div.trailing_c38106 {
-            background: none;
-            border: none;
-            height: var(--custom-channel-header-height);
-        }
-
-        &:has(.threadSidebarOpen_f75fb0.threadSidebarFloating_f75fb0) > .bar_c38106 {
-            z-index: 0;
-        }
-    }
-
-    :not(:has(div.page_c48ade > div.chat_f75fb0)) div.base_c48ade > div.bar_c38106 {
-        right: 0 !important;
-    }
-
-    ul[data-list-id="guildsnav"] > div.itemsContainer_ef3116 > div.stack_dbd263 {
-        margin-top: var(--vr-header-snippet-server-padding);
-    }
-
-    div.topic__6ec1a {
-        -webkit-app-region: no-drag;
-    }
-}
-
-
-
