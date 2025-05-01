@@ -366,31 +366,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
     box-shadow: 0 0 0 2px #ffffff; /* Change #color to your desired border color */
 }
 
-
-/* Transparent Folders Left */
-.expandedFolderIconWrapper__48112 > svg:has(>path[d="M2 5a3 3 0 0 1 3-3h3.93a2 2 0 0 1 1.66.9L12 5h7a3 3 0 0 1 3 3v11a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Z"]) {
-    scale: 10;
-}
-.expandedFolderIconWrapper__48112::after,
-.folderPreview__48112::after {
-    content: "";
-    background-color: #e6e6e6;
-    width: 24px;
-    height: 24px;
-    position: absolute;
-    clip-path: path("M20 7H12L10.553 5.106C10.214 4.428 9.521 4 8.764 4H3C2.447 4 2 4.447 2 5V19C2 20.104 2.895 21 4 21H20C21.104 21 22 20.104 22 19V9C22 7.896 21.104 7 20 7Z");
-}
-.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
-    opacity: .4;
-    filter: blur(2px);
-}
-.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
-    background-color: #ffffff11;
-}
-.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
-    background-color: #000000;
-}
-
 /*Other People Speaking Icons Inside Voice Channel*/
 .border__2f4f7.speaking__2f4f7 {
     box-shadow: inset 0 0 0 2px var(--rs-self-speaking-colour, #ffffff), inset 0 0 0 3px var(--black-500);
