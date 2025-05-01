@@ -563,3 +563,16 @@ div[aria-label="User Profile Modal"] {
     content: "Several people are yapping...";
   }
 }
+
+
+/* Transparent Folders Left */
+.folderPreview__48112 > .folderPreviewGuildIcon__48112 {
+    opacity: .9;
+    filter: blur(2px);
+}
+.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+    background-color: #ffffff11;
+}
+.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
+    background-color: #000000;
+}
