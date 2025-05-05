@@ -1,11 +1,13 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
-@import url("https://raw.githubusercontent.com/LuckFire/amoled-cord/refs/heads/main/clients/amoled-cord.theme.css");
+@import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
+
+
 
 /* Mute, Deafon & Slide Buttons */
 .container__37e49 .buttons__37e49 > :not(:last-child) {
     opacity: 0% !important;
-    width: 0px;
+    width: 5px;
     transition: all 0.3s ease-in-out;
   }
   /* Reveal mute and Deafen buttons when settings button is hovered */
@@ -17,9 +19,9 @@
   .avatarWrapper__37e49{
     transition: all 0.3s ease-in-out;
     width: 100% !important;
-    margin-left: -12px;
+    margin-left: -18px;
     height: 0px;
-    border-radius: 0px !important;
+    border-radius:0px !important;
   }
   /* Move the avatar back to the right a bit to look clean. */
   .avatarWrapper__37e49 .avatar__37e49{
@@ -158,7 +160,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 
-
 /* Hotfix Theme */
 :root {
     --custom-theme-background:      hsl(0, 0%, 0%); /* primary theme color                                           */
@@ -169,5 +170,5 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --theme-base-color-dark-hsl:          216  100%  50%   ; /* make this the same as theme-base-color-dark                   */
     --theme-text-color-dark:        hsl(0, 0%, 100%); /* themes all text on page                                       */
     --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
-    --bg-overlay-selected:          hwb(0 19% 81%); /* the selected channel/dm                                       */
+    --bg-overlay-selected:          hwb(0 9% 91%); /* the selected channel/dm                                       */
 }
