@@ -417,11 +417,6 @@ div[aria-label="User Profile Modal"] {
 }
 
 
-/* Inbox & Help Icon */
-.recentsIcon_c99c29, .trailing_c38106, .channelAppLauncher_e6e74f [href="https://support.discord.com"]{display: none;
-}
-
-
 /* Fixed Chat Allignment */
 .visual-refresh {
     --custom-channel-textarea-text-area-height: 56px;
