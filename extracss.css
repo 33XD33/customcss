@@ -522,3 +522,10 @@ div[aria-label="User Profile Modal"] {
 .theme-light .hiddenVisually__27f77[aria-expanded="false"] {
     background-color: #747474;
 }
+
+
+/* Help & Inbox Top Right Icons */
+.trailing_c38106>:not(.winButtons_c38106),
+.winButtonsWithDivider_c38106::before{
+  display: none;
+}
