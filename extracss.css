@@ -525,7 +525,7 @@ div[aria-label="User Profile Modal"] {
 
 
 /* Help & Inbox Top Right Icons */
-.trailing_c38106>:not(.winButtons_c38106),
-.winButtonsWithDivider_c38106::before{
+.trailing_c38106>:not(.winButtons_c38106,[aria-label]),
+.trailing_c38106:not(:has(>[aria-label])) .winButtons_c38106::before {
   display: none;
 }
