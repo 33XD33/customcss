@@ -1,7 +1,5 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
-@import url("https://luckfire.github.io/amoled-cord/src/amoled-cord.css");
-
 
 
 /* Mute, Deafon & Slide Buttons */
@@ -172,3 +170,5 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
     --bg-overlay-selected:          hwb(0 9% 91%); /* the selected channel/dm                                       */
 }
+
+
