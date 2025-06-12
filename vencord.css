@@ -5,7 +5,7 @@
 /* Mute, Deafon & Slide Buttons */
 .container__37e49 .buttons__37e49 > :not(:last-child) {
     opacity: 0% !important;
-    width: 5px;
+    width: 15px;
     transition: all 0.3s ease-in-out;
   }
   /* Reveal mute and Deafen buttons when settings button is hovered */
@@ -19,7 +19,7 @@
     width: 100% !important;
     margin-left: -18px;
     height: 0px;
-    border-radius:0px !important;
+    border-radius: 0px !important;
   }
   /* Move the avatar back to the right a bit to look clean. */
   .avatarWrapper__37e49 .avatar__37e49{
