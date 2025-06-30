@@ -529,3 +529,44 @@ div[aria-label="User Profile Modal"] {
 .trailing_c38106:not(:has(>[aria-label])) .winButtons_c38106::before {
   display: none;
 }
+
+
+/* Improved Friends List */
+:root {
+    --friend-row-amount: 4;
+}
+@media (width < 1300px) {
+    #app-mount {
+        --friend-row-amount: 3;
+    }
+}
+@media (width < 1100px) {
+    #app-mount {
+        --friend-row-amount: 2;
+    }
+}
+@media (width < 700px) {
+    #app-mount {
+        --friend-row-amount: 1;
+    }
+}
+
+.peopleList__5ec2f >div {
+display: flex;
+flex-wrap: wrap;
+margin: 0px 0px 0px 16px;
+.sectionTitle__5ec2f {
+    width: 100%;
+    >h2.title__1472a {
+margin-left: 0px;
+    }
+}
+.peopleListItem_cc6179 {
+    margin: 0px!important;
+    width: calc(100% / var(--friend-row-amount));
+    overflow: visible;
+}
+.infoSpacing_f4bc97 {
+    display: none;
+}
+}
