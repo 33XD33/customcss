@@ -11,13 +11,13 @@
   /* Reveal mute and Deafen buttons when settings button is hovered */
   .container__37e49 .buttons__37e49:hover > :not(:last-child) {
     opacity: 100% !important;
-    width: 32px;
+    width: 28px;
   }
   /* Resize and move the profile button to take up all the space it can to look clean. */
   .avatarWrapper__37e49{
     transition: all 0.3s ease-in-out;
     width: 100% !important;
-    margin-left: -18px;
+    margin-left: 0px;
     height: 0px;
     border-radius: 0px !important;
   }
@@ -87,37 +87,14 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 
 
 /* Custom Discord icon using image */
-:root{
---discord-icon: none; /* discord icon */
---home-icon: block; /* moon icon */
---home-icon-url: url('https://i.imgur.com/w55Moxr.png');
+.childWrapper__6e9f8>svg {
+  background-image: url("https://i.imgur.com/w55Moxr.png");
+  background-size: contain!important;
+  width: 35px!important;
+  height: 35px!important;
 }
-[class*=childWrapper] > svg:not([class*=favoriteIcon]){
-  display: var(--discord-icon);
-}
-[class*=childWrapper]:has(svg:not([class*=favoriteIcon]))::before {
-    content: '';
-    display: var(--home-icon);
-    position: absolute;
-    width: 85%;
-    height: 85%;
-    background: var(--text-normal);
-    mask-image: var(--home-icon-url) center/contain no-repeat !important;
-    mask: var(--home-icon-url) center/contain no-repeat !important;
-}
-.form_f75fb0::after {
+.childWrapper__6e9f8>svg>path {
   display: none;
-}
-
-
-/* Remove Top Left Discord Icon */
-.wordmark__421ed{pointer-events:unset;padding:0}
-.wordmark__421ed>svg{display:none}
-.wordmark__421ed::after{position:absolute;top:4px;padding:2px 9px 3px;font-size:14px;letter-spacing:.9px;white-space:nowrap;font-family:Old London;content:var(--modtitle-text)}:root{--modtitle-text: "Modified Discord"}:root:has(#vencord-css-core){--modtitle-text: "Vencord"}:root:has(#vcd-css-core){--modtitle-text: "Vesktop"}:root:has(link[href^=replugged]){--modtitle-text: "Replugged"}
-:root:has(bd-body){--modtitle-text: "BetterDiscord"}:root:has(script[src^="chrome-extension://cpojbkbhfkkljmlojagocnbmiaagkhkn"]){--modtitle-text: "Shelter"}
-
-:root {
-    --modtitle-text: "" !important;
 }
 
 
@@ -145,7 +122,40 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
+/* Trying Left Side Panel */
+nav[class*="guilds"]::-webkit-scrollbar {
+  display: none !important;
+}
 
+nav[class*="guilds"] {
+  --paddingY: 15px;
+  position: absolute;
+  z-index: 100;
+  top: 50%;
+  max-height: 70vh;
+  overflow-y: auto;
+  transform: translate(-90%, -50%) !important;
+  transition: all 0.4s ease;
+  border-radius: 15px;
+  padding-top: var(--paddingY);
+  padding-bottom: var(--paddingY);
+  border: 2px solid #242424;
+  box-shadow: rgba(0, 0, 0, 0.2) 5px 5px 5px 5px;
+  height: 10vh;
+}
+
+nav[class*="guilds"] div {
+  transform: scale(0);
+}
+
+nav[class*="guilds"]:hover {
+  transform: translate(0%, -50%) !important;
+  height: auto;
+}
+
+nav[class*="guilds"]:hover div {
+  transform: scale(100%);
+}
 
 
 
@@ -170,5 +180,8 @@ main[class^="chatContent_"] form[class^="form_"]::before {
     --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
     --bg-overlay-selected:          hwb(0 9% 91%); /* the selected channel/dm                                       */
 }
+
+
+
 
 
