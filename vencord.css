@@ -165,23 +165,3 @@ nav[class*="guilds"]:hover div {
 
 
 
-
-
-
-/* Hotfix Theme */
-:root {
-    --custom-theme-background:      hsl(0, 0%, 0%); /* primary theme color                                           */
-    --custom-theme-primary-color:   hsl(0, 0%, 0%); /* influences border color, dark buttons and like thats it       */
-    --custom-theme-secondary-color: hsl(0, 0%, 0%); /* also influences border                                        */
-    --theme-base-color-dark:        hsl(0, 0%, 0%); /* influences everything else not mentioned here                 */
-    --theme-base-color-amount:            100%;              /*  ^ by how much? set this low, like 25%                        */
-    --theme-base-color-dark-hsl:          216  100%  50%   ; /* make this the same as theme-base-color-dark                   */
-    --theme-text-color-dark:        hsl(0, 0%, 100%); /* themes all text on page                                       */
-    --theme-text-color-amount:            0%              ; /*  ^ by how much? set this low, like 25%                        */
-    --bg-overlay-selected:          hwb(0 9% 91%); /* the selected channel/dm                                       */
-}
-
-
-
-
-
