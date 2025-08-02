@@ -62,10 +62,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Search Bar Compact */
-.search__49676{order:var(--search-order, 1)}.search__49676 .searchBar__97492{background:rgba(0,0,0,0)}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)){width:30px}.search__49676 .searchBar__97492:not(:focus-within,:hover,:has(.clear_fea832)) .iconContainer_fea832{width:20px;height:20px;left:-4px;cursor:pointer}
-
-
 /* Flip Camera */
 .mirror__48b20 {
     transform: scaleX(1);
