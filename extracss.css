@@ -87,7 +87,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .content__99f8c [style="height: 84px;"]{
     display: none
 }
-.container_eff079{
+div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
     display: none;
 }
 
