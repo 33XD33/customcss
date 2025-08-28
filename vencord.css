@@ -77,15 +77,6 @@ main[class^="chatContent_"] form[class^="form_"]::before {
 }
 
 
-/* i'm new here, say hi! */
-[class*=newMemberBadge]:before {
-    content: url("https://opengameart.org/sites/default/files/kaczuha_1.gif");
-    transform: translate(-100%, -110%);
-    display: inline-block;
-    scale: 0.32;
-}
-
-
 /* Custom Discord icon using image */
 .childWrapper__6e9f8>svg {
   background-image: url("https://i.imgur.com/w55Moxr.png");
@@ -193,12 +184,27 @@ nav[class*="guilds"]:hover div {
     }
 
 
+/* PinDMs Fixes */
+.vc-pindms-section-container {
+    text-transform: unset !important;
+    font-family: var(--font-primary);
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(129, 129, 129)!important;
+    /* V Uncomment this line to use the default category color. */
+    /* color: var(--channels-default) !important; */
+}
+
+
+
 
 
 
 
 
 /* Add New Below */
+
+
 
 
 
