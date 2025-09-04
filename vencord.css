@@ -52,32 +52,6 @@
 
 
 /* Custom Discord icon using image */
-:root {
-     --background-image: url("https://media.tenor.com/4noHdLpBCgEAAAAi/cat-pop-pop-pop.gif"); /* Change image here */
-     --size: 100px;  /* Change Image size here */
-     --align: right; /* Change alignment here */
-}
-
-main[class^="chatContent_"] form[class^="form_"]::before {
-    background-image: var(--background-image) !important;
-    background-size: contain !important; 
-    background-position:  var(--align) !important;
-    background-repeat: no-repeat !important;
-    transform: scaleX(1);
-    margin-left: 1%;
-    margin-right: 2%;
-    height: var(--size);
-    max-height: var(--size);
-    top: calc(var(--size) - var(--size) - var(--size));
-    pointer-events: none;
-}
-.childWrapper__6e9f8:has(> svg:not(.favoriteIcon_c9fddf)) {
-    background-color: transparent !important;
-    background-size: cover;
-}
-
-
-/* Custom Discord icon using image */
 .childWrapper__6e9f8>svg {
   background-image: url("https://i.imgur.com/w55Moxr.png");
   background-size: contain!important;
@@ -190,7 +164,7 @@ nav[class*="guilds"]:hover div {
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgb(129, 129, 129)!important;
+    color: rgb(109, 109, 109)!important;
     /* V Uncomment this line to use the default category color. */
     /* color: var(--channels-default) !important; */
 }
