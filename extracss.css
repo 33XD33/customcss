@@ -1,5 +1,48 @@
 /*Extra Person CSS*/
 
+/* Fixed Chat Allignment */
+.visual-refresh {
+    --custom-channel-textarea-text-area-height: 56px;
+    .form_f75fb0 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 8px 8px 8px;
+    }
+    .channelTextArea_f75fb0 {
+        margin-bottom: 0;
+    }
+    .base_b88801 {
+        position: static;
+        order: -1;
+        padding: 0 8px;
+        background-color: var(--chat-background-default);
+        transition: border-color .2s ease;
+        border: 1px solid var(--border-faint);
+        border-bottom: none;
+        border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+    }
+    .stackedBars__74017 {
+        transition: border-color .2s ease;
+        border-color: var(--border-faint) !important;
+    }
+    .form_f75fb0:has(.base_b88801) {
+        .channelTextArea_f75fb0 {
+            border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+        }
+        .stackedBars__74017 {
+            border-radius: 0;
+        }
+    }
+    .form_f75fb0:has(.channelTextArea__74017:focus-within) {
+        .base_b88801 {
+            border-color: var(--border-subtle);
+        }
+        .stackedBars__74017 {
+            border-color: var(--border-subtle) !important;
+        }
+    }
+}
+
 
 /* Disable Join Server and Discovery Icon */
 /**
