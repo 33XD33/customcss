@@ -61,13 +61,15 @@
 .childWrapper__6e9f8>svg>path {
   display: none;
 }
+.childWrapper__6e9f8:hover {
+  background-color: transparent !important;
+}
 
 
 /* Text Editor Typing Area */
 .placeholder__1b31f {
   font-size: 0;
 }
-
 
 /* Image Loading (Test) */
 .content_a2f514 {
@@ -176,7 +178,11 @@ nav[class*="guilds"]:hover div {
 
 
 
+
+
 /* Add New Below */
+
+
 
 
 
