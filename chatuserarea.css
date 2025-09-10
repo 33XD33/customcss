@@ -13,7 +13,7 @@
 		& > div[class*="channelBottomBarArea"] {
 			--custom-channel-textarea-text-area-height: 44px;
 			div[class*="attachWrapper_"] {
-				padding: 6px;
+				padding: 10px;
 			}
 		}
 
