@@ -13,12 +13,12 @@
 		& > div[class*="channelBottomBarArea"] {
 			--custom-channel-textarea-text-area-height: 44px;
 			div[class*="attachWrapper_"] {
-				padding: 10px;
+				padding: 6px;
 			}
 		}
 
 		& > [class*="wrapper__"] {
-			padding: 6px !important;
+			padding: 10px !important;
 			& > div {
 				margin-left: 0;
 				margin-right: 0;
@@ -305,9 +305,3 @@
 		transform: translateY(2px);
 	}
 }
-
-
-
-
-
-
