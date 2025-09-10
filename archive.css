@@ -1221,3 +1221,8 @@ div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
     /* Chat Area */
     --sticker: none; 
 }
+
+/* Remove Small Dots and Reply Arrow*/
+.buttons__5126c {
+ display: none;
+}
