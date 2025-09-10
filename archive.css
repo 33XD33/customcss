@@ -1226,3 +1226,11 @@ div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
 .buttons__5126c {
  display: none;
 }
+
+/* ----- Hide Nitro and Shop ----- */
+ [role="listitem"]:has([href="/store"]) {display: none} 
+ [role="listitem"]:has([href="/shop"]) {display: none}
+/** Hide apps button next to chatbar */
+[class^=channelAppLauncher] {
+  display: none ; 
+}
