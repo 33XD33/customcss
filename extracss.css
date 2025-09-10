@@ -227,14 +227,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
   flex: 0 1 auto !important;
 }
 
-
-/* Don't show me activity in server */
-[class^='membersGroup']:has([role=button]),
-[class^='member'] [class^='container']:has([class*='badges']) {
-  display: none;
-}
-
-
 /* Don't show Chat Apps   */
 .visual-refresh .channelAppLauncher_e6e74f, .trailing_c38106 [href="https://support.discord.com"]{display: none;
 }
@@ -339,10 +331,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
 /* White Noti Lines */
 .item__58105{display:none}
 
-
-/*Hide "Active Now" in Friends List*/
-[class*="nowPlayingColumn"]
-{display: none;}
 
 /* User Area Icon Recolor */
 .panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
