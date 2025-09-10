@@ -1,6 +1,6 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
-
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
 
 /* Mute, Deafon & Slide Buttons */
 .container__37e49 .buttons__37e49 > :not(:last-child) {
@@ -64,7 +64,9 @@
 .childWrapper__6e9f8:hover {
   background-color: transparent !important;
 }
-
+.wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8{
+    background-color: var(--background-mod-subtle);
+}
 
 /* Text Editor Typing Area */
 .placeholder__1b31f {
@@ -93,7 +95,7 @@
 /* Server swipe left */
 .guilds_c48ade{
     transition-property:width, opacity;
-    transition-duration: 0.2s;
+    transition-duration: 0.3s;
     width:2px;
     opacity:0;}
 
@@ -149,8 +151,40 @@
     /* color: var(--channels-default) !important; */
 }
 
+/* Extra Settings */
+:root {
+    --\\--compact-title-bar: true;
+    --\\--compact-input-box: true;
+    --\\--compact-context-menu: true;
+    --\\--compact-user-area: true;
+    --\\--compact-channel-categories: true;
+    --\\--compact-server-list: false;
 
-
+    --\\--hide-nameplates: true;
+    --\\--hide-guild-tags: true;
+    --\\--hide-profile-effects: true;
+    --\\--hide-avatar-decorations: false;
+    --\\--hide-gradient-glow-usernames: true;
+    --\\--hide-server-boost-goal: true;
+    --\\--hide-server-activity: true;
+    --\\--hide-user-activity: true;
+    --\\--hide-context-menu-quick-reactions: true;
+    --\\--hide-hover-quick-reactions: false;
+    --\\--hide-image-edit-button: true;
+    --\\--hide-gif-button: false;
+    --\\--hide-sticker-button: false;
+    --\\--hide-emoji-button: false;
+    --\\--hide-apps-button: true;
+    --\\--hide-gift-button: true;
+    --\\--hide-help-button: false;
+    --\\--hide-shop-button: false;
+    --\\--hide-nitro-button: true;
+    --\\--hide-active-now: true;
+    --\\--hide-nitro-upsells: true;
+    --\\--hide-vencord-desktop-platform-indicator: true;
+    --\\--hide-cluttery-badges: true;
+    /* ^ hides quest, hypesquad, active dev, and discriminator badges */
+}
 
 
 
