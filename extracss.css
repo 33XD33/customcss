@@ -80,32 +80,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
   display: none
 }
 
-
-/* Hide Server Banner & Server Boost Progress */
- .animatedContainer_f37cb1,
-.content__99f8c [style="height: 84px;"]{
-    display: none
-}
-div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
-    display: none;
-}
-
-
-/* Hide Sticker */
-:root {
-  --sticker: flex;
-}
-
-[class*=form-] [class*=button_][aria-label="Open sticker picker"] {
-  display: var(--sticker);
-}
-
-:root {
-    /* Chat Area */
-    --sticker: none; 
-}
-
-
 /* Reactions Hover */
 [class^=reaction_]:not(:has(.burstGlow__23977)) .emoji {
     transition: transform 0.6s ease;
