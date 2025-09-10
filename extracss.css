@@ -35,12 +35,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Remove Small Dots and Reply Arrow*/
-.buttons__5126c {
- display: none;
-}
-
-
 /* Remove Share Screen Left*/
 .actionButtons_e131a9 {
  display: none;
@@ -150,13 +144,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
   scale: 1;
 }
 
-/* ----- Hide Nitro and Shop ----- */
- [role="listitem"]:has([href="/store"]) {display: none} 
- [role="listitem"]:has([href="/shop"]) {display: none}
-/** Hide apps button next to chatbar */
-[class^=channelAppLauncher] {
-  display: none ; 
-}
 
 /**
 * @name RecolorAddFriendsTab
