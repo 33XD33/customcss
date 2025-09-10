@@ -1196,3 +1196,14 @@ button[class^="vc-ranb"] div[class^="contents_"]::after {
 /*Hide "Active Now" in Friends List*/
 [class*="nowPlayingColumn"]
 {display: none;}
+
+
+
+/* Hide Server Banner & Server Boost Progress */
+ .animatedContainer_f37cb1,
+.content__99f8c [style="height: 84px;"]{
+    display: none
+}
+div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
+    display: none;
+}
