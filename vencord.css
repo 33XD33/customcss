@@ -2,6 +2,7 @@
 @import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
 
+
 /* Mute, Deafon & Slide Buttons */
 .container__37e49 .buttons__37e49 > :not(:last-child) {
     opacity: 0% !important;
@@ -11,7 +12,7 @@
   /* Reveal mute and Deafen buttons when settings button is hovered */
   .container__37e49 .buttons__37e49:hover > :not(:last-child) {
     opacity: 100% !important;
-    width: 28px;
+    width: 33px;
   }
   /* Resize and move the profile button to take up all the space it can to look clean. */
   .avatarWrapper__37e49{
@@ -25,7 +26,12 @@
   .avatarWrapper__37e49 .avatar__37e49{
     margin-left: 0px;
   }
-
+  /* Remove the arrows. */
+.buttons__37e49 {
+  .buttonChevron__37e49 {
+    display: none;
+   }
+}
 
 /* Friends to Home */
 [href="/channels/@me"] {
@@ -55,8 +61,8 @@
 .childWrapper__6e9f8>svg {
   background-image: url("https://i.imgur.com/w55Moxr.png");
   background-size: contain!important;
-  width: 35px!important;
-  height: 35px!important;
+  width: 30px!important;
+  height: 30px!important;
 }
 .childWrapper__6e9f8>svg>path {
   display: none;
@@ -89,19 +95,6 @@
          scale: 1.125;
          margin-bottom: 350px;
     }
-}
-
-
-/* Server swipe left */
-.guilds_c48ade{
-    transition-property:width, opacity;
-    transition-duration: 0.3s;
-    width:2px;
-    opacity:0;}
-
-.guilds_c48ade:hover{
-    width:70px;
-    opacity:1;
 }
 
 
@@ -193,13 +186,3 @@
 
 
 /* Add New Below */
-
-
-
-
-
-
-
-
-
-
