@@ -1,5 +1,5 @@
-@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/extracss.css");
-@import url("https://raw.githubusercontent.com/burdenss/customcss/refs/heads/main/nitrohide.css");
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/nitrohide.css");
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
 
 
@@ -12,7 +12,7 @@
   /* Reveal mute and Deafen buttons when settings button is hovered */
   .container__37e49 .buttons__37e49:hover > :not(:last-child) {
     opacity: 100% !important;
-    width: 33px;
+    width: 30px;
   }
   /* Resize and move the profile button to take up all the space it can to look clean. */
   .avatarWrapper__37e49{
@@ -73,6 +73,8 @@
 .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8{
     background-color: var(--background-mod-subtle);
 }
+
+
 
 /* Text Editor Typing Area */
 .placeholder__1b31f {
@@ -139,10 +141,11 @@
     font-family: var(--font-primary);
     font-size: 14px;
     font-weight: 500;
-    color: rgb(109, 109, 109)!important;
+    color: rgb(161, 161, 161)!important;
     /* V Uncomment this line to use the default category color. */
     /* color: var(--channels-default) !important; */
 }
+
 
 /* Extra Settings */
 :root {
