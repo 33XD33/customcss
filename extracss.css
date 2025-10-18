@@ -412,10 +412,10 @@ div[aria-label="User Profile Modal"] {
     opacity: .4;
     filter: blur(2px);
 }
-.theme-dark .hiddenVisually__27f77[aria-expanded="false"] {
+.theme-dark .hiddenVisually_b18fe2[aria-expanded="false"] {
     background-color: #000000;
 }
-.theme-light .hiddenVisually__27f77[aria-expanded="false"] {
+.theme-light .hiddenVisually_b18fe2[aria-expanded="false"] {
     background-color: #747474;
 }
 
