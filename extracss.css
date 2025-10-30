@@ -385,7 +385,12 @@ div[aria-label="User Profile Modal"] {
 div[id="channels"] > ul[class^="content"] div:has(div[class^="progress"]) {
     display: none;
 }
-/* Hide quests home page */
-.channel__972a0 a[href="/quest-home"] {
-  display: none;
+/* Hide Nitro, Shop, and Quests in the DM sidebar */
+nav[class*="privateChannels" i] [data-list-item-id*="nitro" i],
+nav[class*="privateChannels" i] [data-list-item-id*="shop" i],
+nav[class*="privateChannels" i] [data-list-item-id*="quests" i],
+nav[class*="privateChannels" i] [aria-label="Quests" i],
+nav[class*="privateChannels" i] [aria-label="Shop" i],
+nav[class*="privateChannels" i] [aria-label="Nitro" i] {
+    display: none !important;
 }
