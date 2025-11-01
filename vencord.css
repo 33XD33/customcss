@@ -4,6 +4,7 @@
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
 
 
+
 /* Mute, Deafon & Slide Buttons */
 .container__37e49 .buttons__37e49 > :not(:last-child) {
     opacity: 0% !important;
@@ -78,10 +79,6 @@ div[class^=micButtonParent__] {
 .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8{
     background-color: var(--background-mod-subtle);
 }
-
-
-/* Text Editor Typing Area */
-.textArea__74017 .placeholder__1b31f {display:none}
 
 
 /* Image Loading (Test) */
@@ -183,25 +180,6 @@ div[class^=micButtonParent__] {
     --\\--hide-cluttery-badges: true;
     /* ^ hides quest, hypesquad, active dev, and discriminator badges */
 }
-
-
-/* Hide Nitro, Shop, and Quests in the DM sidebar */
-nav[class*="privateChannels" i] [data-list-item-id*="nitro" i],
-nav[class*="privateChannels" i] [data-list-item-id*="shop" i],
-nav[class*="privateChannels" i] [data-list-item-id*="quests" i],
-nav[class*="privateChannels" i] [aria-label="Quests" i],
-nav[class*="privateChannels" i] [aria-label="Shop" i],
-nav[class*="privateChannels" i] [aria-label="Nitro" i] {
-    display: none !important;
-}
-
-
-/* Hide Find or start a conversation */
-div[class^="searchBar_e6b769"] { display: none; }
-div[class^="sectionDivider_e6b769"] { display: none; }
-
-
-
 
 
 
