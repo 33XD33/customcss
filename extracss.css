@@ -1,6 +1,16 @@
 /*Extra Person CSS*/
 
 
+/* Hide Stuff */
+[aria-label="Threads"],
+[aria-label="Notification Settings"],
+[aria-label="Hide Member List"],
+[aria-label="Inbox"],
+[aria-label="Help"] {
+  display: none
+}
+
+
 /*Textarea Patches*/
 .form_f75fb0 {
   z-index: 0;
