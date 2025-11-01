@@ -192,12 +192,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Remove Search Convo*/
-.searchBar__35e86 {
- display: none;
-}
-
-
 /* Add "@" before Username */
 [class*=userTag_] [class*=userTagUsername_]:before {
   color: white(--text-muted);
@@ -208,15 +202,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 /* Flip Camera */
 .mirror__48b20 {
     transform: scaleX(1);
-}
-
-/* Hide Stuff */
-[aria-label="Threads"],
-[aria-label="Notification Settings"],
-[aria-label="Hide Member List"],
-[aria-label="Inbox"],
-[aria-label="Help"] {
-  display: none
 }
 
 
@@ -286,6 +271,8 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
   margin-top: 0px;
   scale: 1;
 }
+
+  
 /**
 * @name RecolorAddFriendsTab
 * @author krystalskullofficial
