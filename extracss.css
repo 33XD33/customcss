@@ -1,17 +1,6 @@
 /*Extra Person CSS*/
 
 
-/* Hide Nitro, Shop, and Quests in the DM sidebar */
-nav[class*="privateChannels" i] [data-list-item-id*="nitro" i],
-nav[class*="privateChannels" i] [data-list-item-id*="shop" i],
-nav[class*="privateChannels" i] [data-list-item-id*="quests" i],
-nav[class*="privateChannels" i] [aria-label="Quests" i],
-nav[class*="privateChannels" i] [aria-label="Shop" i],
-nav[class*="privateChannels" i] [aria-label="Nitro" i] {
-    display: none !important;
-}
-
-
 /*Textarea Patches*/
 .form_f75fb0 {
   z-index: 0;
