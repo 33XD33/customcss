@@ -50,22 +50,23 @@ div[class^=micButtonParent__] {
 }
 
 [href="/channels/@me"]::after {
-  content: "Home　　　　　　　　　　";
+  content: "home　　　　　　　　　　";
   line-height: 80px;
   font-weight: 290;
-  font-size: 24px; 
-  letter-spacing:0.5px;
-  font-family: Old London;
+  font-size: 32px; 
+  letter-spacing:3px;
+  font-family: Doto;
+  color: rgb(255, 255, 255);
   /* color:  black */
   visibility: visible;
   position: absolute;
-  left: 10px;
+  left: 4px;
 }
 
 
 /* Custom Discord icon using image */
 .childWrapper__6e9f8>svg {
-  background-image: url("https://i.imgur.com/w55Moxr.png");
+  background-image: url("https://i.imgur.com/8sBeWwt.png");
   background-size: contain!important;
   width: 30px!important;
   height: 30px!important;
