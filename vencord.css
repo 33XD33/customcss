@@ -1,8 +1,4 @@
-@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss2.css");
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
-@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/nitrohide.css");
-@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
-
 
 
 /* Mute, Deafon & Slide Buttons */
@@ -38,6 +34,7 @@ div[class^=micButtonParent__] {
     }
   }
 }
+
 
 /* Friends to Home */
 [href="/channels/@me"] {
@@ -150,16 +147,16 @@ div[class^=micButtonParent__] {
 /* Extra Settings */
 :root {
     --\\--compact-title-bar: true;
-    --\\--compact-input-box: true;
+    --\\--compact-input-box: false;
     --\\--compact-context-menu: true;
-    --\\--compact-user-area: true;
+    --\\--compact-user-area: false;
     --\\--compact-channel-categories: true;
     --\\--compact-server-list: false;
 
     --\\--hide-nameplates: true;
     --\\--hide-guild-tags: true;
     --\\--hide-profile-effects: true;
-    --\\--hide-avatar-decorations: false;
+    --\\--hide-avatar-decorations: true;
     --\\--hide-gradient-glow-usernames: true;
     --\\--hide-server-boost-goal: true;
     --\\--hide-server-activity: true;
@@ -170,7 +167,7 @@ div[class^=micButtonParent__] {
     --\\--hide-gif-button: false;
     --\\--hide-sticker-button: false;
     --\\--hide-emoji-button: false;
-    --\\--hide-apps-button: true;
+    --\\--hide-apps-button: false;
     --\\--hide-gift-button: true;
     --\\--hide-help-button: false;
     --\\--hide-shop-button: false;
@@ -185,7 +182,10 @@ div[class^=micButtonParent__] {
 
 
 
+
+
 /* Add New Below */
+
 
 
 
