@@ -1,5 +1,11 @@
 /*Extra Person CSS*/
 
+
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss2.css");
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/nitrohide.css");
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
+
+
 /* Hide Stuff */
 [aria-label="Threads"],
 [aria-label="Notification Settings"],
