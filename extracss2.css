@@ -33,7 +33,7 @@
 /* White Noti Lines */
 .item__58105{display:none}
 /* User Area Icon Recolor */
-.panels_c48ade .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
+.panels__5e434 .lottieIcon__5eb9b :not(defs *)[fill][fill-opacity] {
   fill: rgb(255, 255, 255);
 }
 .lottieIcon__5eb9b > svg > g > g > g:nth-child(1) > g > g:nth-child(2) > g:nth-child(2) > path {
