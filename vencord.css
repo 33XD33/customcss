@@ -1,29 +1,48 @@
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
 
 
-/* Mute, Deafon & Slide Buttons */
-.container__37e49 .buttons__37e49 > :not(:last-child) {
-    opacity: 0% !important;
-    width: 15px;
-    transition: all 0.2s ease-in-out;
-  }
-  /* Reveal mute and Deafen buttons when settings button is hovered */
-  .container__37e49 .buttons__37e49:hover > :not(:last-child) {
-    opacity: 100% !important;
-    width: 30px;
-  }
-  /* Resize and move the profile button to take up all the space it can to look clean. */
-  .avatarWrapper__37e49{
-    transition: all 0.2s ease-in-out;
-    width: 100% !important;
-    margin-left: 0px;
-    height: 0px;
-    border-radius: 10px !important;
-  }
-  /* Move the avatar back to the right a bit to look clean. */
-  .avatarWrapper__37e49 .avatar__37e49{
-    margin-left: 0px;
-  }
+
+/* --Improved User Area-- */
+/* Make both the username and status message visible at all times. */
+.container__37e49 .hovered__0263c, .hoverRoll__0263c.forceHover__0263c:not(.disabled__0263c) .default__0263c{
+  opacity: 1!important;
+  transform: none;
+}
+/* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
+.container__37e49 .hovered__0263c::before{
+  content: "@";
+}
+/* Move the custom Status message down so that it doesnt overlap with the Username */
+.default__0263c{
+  margin-top: 15px;
+  opacity: 1!important;
+  transform: none!important;
+}
+/* Credit to @thecommieaxolotl for this code. */
+/* --Hides User Buttons until Hover-- */
+/* Hide mute and deafen buttons */
+.panels__5e434 > .container__37e49 .buttons__37e49 > :not(:nth-last-child(2)) {
+  opacity: 0% !important;
+  width: 0px;
+  transition: all 0.3s ease-in-out;
+}
+/* Reveal mute and Deafen buttons when settings button is hovered */
+.panels__5e434 > .container__37e49 .buttons__37e49:hover > :not(:nth-last-child(2)) {
+  opacity: 100% !important;
+  width: 32px;
+}
+/* Resize and move the profile button to take up all the space it can to look clean. */
+.avatarWrapper__37e49{
+  transition: all 0.3s ease-in-out;
+  width: 100%!important;
+  margin-left: -10px;
+  height: 53px;
+  border-radius: 0!important;
+}
+/* Move the avatar back to the right a bit to look clean. */
+.avatarWrapper__37e49 .avatar__37e49{
+  margin-left: 10px;
+}
 /* hide menus next to mute and deafen buttons */
 div[class^=micButtonParent__] {
   button[role="switch"] {
@@ -76,24 +95,6 @@ div[class^=micButtonParent__] {
 }
 .wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8{
     background-color: var(--background-mod-subtle);
-}
-
-
-/* Image Loading (Test) */
-.content_a2f514 {
-    display: flex;
-    flex-direction: column;
-    > .spinner_a2f514 { display: none }
-    &:before {
-        display: block;
-        height: 28px;
-        position: relative;
-        content: url(https://media.giphy.com/media/ckT59CvStmUsU/giphy.gif?cid=ecf05e47b4ryql72u4y4shb8bib3j9a7aarege3qiphwu0uk&ep=v1_gifs_search&rid=giphy.gif&ct=g);
-        image-rendering: pixelated;
-         align-content: center;
-         scale: 1.125;
-         margin-bottom: 350px;
-    }
 }
 
 
@@ -193,3 +194,7 @@ div[class^=micButtonParent__] {
 
 
 
+
+.button__85643:nth-of-type(1) {
+    display: none;
+}
