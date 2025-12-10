@@ -175,3 +175,9 @@ a:has([d^="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98"]),
 [class*=button_]:has([d^=" M1.5130000114440918,-5.5920000076293945 C0"]), #channel-attach-SLASH_COMMAND {
   display: none;
 }
+
+
+/* Hides Nitro Panel in Settings */
+nav > ul:has(> div[data-settings-sidebar-item="nitro_panel"]) {
+    display: none;
+}
