@@ -181,3 +181,14 @@ a:has([d^="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98"]),
 nav > ul:has(> div[data-settings-sidebar-item="nitro_panel"]) {
     display: none;
 }
+
+/* Remove Server Banner Image */
+nav[class^="container"] > div[class*="bannerVisible"] > div[class^="animatedContainer"] {
+     display: none;
+}
+/* Remove Server Banner Gap caused by Above */
+nav[class^="container"] > div[id="channels"] > ul {
+    :is(div[style="height: 84px;"], div[style="height: 8px;"]) {
+        display: none;
+    }
+}
