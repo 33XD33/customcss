@@ -1,19 +1,17 @@
-@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
-
-
+import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
 
 /* --Improved User Area-- */
 /* Make both the username and status message visible at all times. */
-.container__37e49 .hovered__0263c, .hoverRoll__0263c.forceHover__0263c:not(.disabled__0263c) .default__0263c{
+._37e49614b9f110a9-container ._0263c8321829b3e8-hovered, ._0263c8321829b3e8-hoverRoll._0263c8321829b3e8-forceHover:not(._0263c8321829b3e8-disabled) ._0263c8321829b3e8-default{
   opacity: 1!important;
   transform: none;
 }
 /* Adds an @ to the username. Discord, for the love of god, just add this yourself already. */
-.container__37e49 .hovered__0263c::before{
+._37e49614b9f110a9-container ._0263c8321829b3e8-hovered::before{
   content: "@";
 }
 /* Move the custom Status message down so that it doesnt overlap with the Username */
-.default__0263c{
+._0263c8321829b3e8-default{
   margin-top: 15px;
   opacity: 1!important;
   transform: none!important;
@@ -21,18 +19,18 @@
 /* Credit to @thecommieaxolotl for this code. */
 /* --Hides User Buttons until Hover-- */
 /* Hide mute and deafen buttons */
-.panels__5e434 > .container__37e49 .buttons__37e49 > :not(:nth-last-child(2)) {
+._5e434347c823b592-panels > ._37e49614b9f110a9-container ._37e49614b9f110a9-buttons > :not(:nth-last-child(2)) {
   opacity: 0% !important;
   width: 0px;
   transition: all 0.3s ease-in-out;
 }
 /* Reveal mute and Deafen buttons when settings button is hovered */
-.panels__5e434 > .container__37e49 .buttons__37e49:hover > :not(:nth-last-child(2)) {
+._5e434347c823b592-panels > ._37e49614b9f110a9-container ._37e49614b9f110a9-buttons:hover > :not(:nth-last-child(2)) {
   opacity: 100% !important;
   width: 32px;
 }
 /* Resize and move the profile button to take up all the space it can to look clean. */
-.avatarWrapper__37e49{
+._37e49614b9f110a9-avatarWrapper{
   transition: all 0.3s ease-in-out;
   width: 100%!important;
   margin-left: -10px;
@@ -40,7 +38,7 @@
   border-radius: 0!important;
 }
 /* Move the avatar back to the right a bit to look clean. */
-.avatarWrapper__37e49 .avatar__37e49{
+._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar{
   margin-left: 10px;
 }
 /* hide menus next to mute and deafen buttons */
@@ -61,7 +59,7 @@ div[class^=micButtonParent__] {
   position: relative;
 }
 
-.linkButtonIcon__972a0:has(path[d^="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56"]) {
+._972a0d22c8afa7f0-linkButtonIcon:has(path[d^="M3 5v-.75C3 3.56 3.56 3 4.25 3s1.24.56"]) {
   visibility: visable !important;
 }
 
@@ -76,32 +74,42 @@ div[class^=micButtonParent__] {
   /* color:  black */
   visibility: visible;
   position: absolute;
-  left: 4px;
+  left: 6px;
+}
+
+
+/* Customize the placeholder text */
+textarea::placeholder,
+[class^="textArea-"]::placeholder {
+    color: #ffffff; /* Blue color */
+    font-size: 14px; 
+    font-style: italic;
+    opacity: 0; /* Ensures full opacity for placeholder text */
 }
 
 
 /* Custom Discord icon using image */
-.childWrapper__6e9f8>svg {
+._6e9f8dce4cc18de3-childWrapper>svg {
   background-image: url("https://i.imgur.com/8sBeWwt.png");
   background-size: contain!important;
   width: 30px!important;
   height: 30px!important;
 }
-.childWrapper__6e9f8>svg>path {
+._6e9f8dce4cc18de3-childWrapper>svg>path {
   display: none;
 }
-.childWrapper__6e9f8:hover {
+._6e9f8dce4cc18de3-childWrapper:hover {
   background-color: transparent !important;
 }
-.wrapper__6e9f8.selected__6e9f8 .childWrapper__6e9f8{
+._6e9f8dce4cc18de3-wrapper._6e9f8dce4cc18de3-selected ._6e9f8dce4cc18de3-childWrapper{
     background-color: var(--background-mod-subtle);
 }
 
 
 /* Search Bar Compact */
-    .upperContainer__9293f .toolbar__9293f .search__49676 { /* Re-Iconify Search */
+    ._9293f6b2fc12398a-upperContainer ._9293f6b2fc12398a-toolbar ._496769951eb140fe-search { /* Re-Iconify Search */
         order: -1;
-        .searchBar__97492 { /* Make the default state only show an icon that can be clicked. */
+        ._974928fe84ca9647-searchBar { /* Make the default state only show an icon that can be clicked. */
             transition: all ease 0.3s;
             width: 25px;
             box-sizing: unset;
@@ -109,21 +117,21 @@ div[class^=micButtonParent__] {
             background: none;
             border: none;
             padding: 0;
-            .icon__97492 {
+            ._974928fe84ca9647-icon {
                 height: 32px;
                 width: 32px;
                 scale: 1.2;
                 cursor: pointer;
             }
         }
-        .focused__97492 .searchBar__97492, .open__97492 .searchBar__97492 { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
+        ._974928fe84ca9647-focused ._974928fe84ca9647-searchBar, ._974928fe84ca9647-open ._974928fe84ca9647-searchBar { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
             width: 225px;
             box-sizing: border-box;
             cursor: text;
             background: var(--background-gradient-low, var(--input-background));
             border: 1px solid var(--input-border);
             padding: 2px 0;
-            .icon__97492 {
+            ._974928fe84ca9647-icon {
                 height: 24px;
                 width: 24px;
                 scale: 1;
@@ -185,6 +193,8 @@ div[class^=micButtonParent__] {
 
 
 
+
+
 /* Add New Below */
 
 
@@ -193,8 +203,6 @@ div[class^=micButtonParent__] {
 
 
 
-
-
-.button__85643:nth-of-type(1) {
+._85643a485899904b-button:nth-of-type(1) {
     display: none;
 }
