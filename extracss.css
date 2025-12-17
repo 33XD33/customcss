@@ -13,6 +13,20 @@
   display: none
 }
 
+/* GIF button */
+button[aria-label="Open GIF picker"],
+
+/* Gift button */
+button[aria-label="Send a gift"],
+
+/* Nitro DM button */
+li button[aria-label*="Nitro"],
+
+/* Shop button */
+li button[aria-label="Shop"] {
+  display: none !important;
+}
+
 
 /* Disable Join Server and Discovery Icon */
 /**
@@ -69,11 +83,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
   display: none
 }
 
-/* Reactions Hover */
-[class^=reaction_]:not(:has(.burstGlow__23977)) .emoji {
-    transition: transform 0.6s ease;
-    transform-style: preserve-3d; 
-  
+
 /* Enables 3D transformations */
 -79,363 +79,3 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
     transition: transform 0.6s ease;
@@ -135,25 +145,35 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
 /**
 * @name RecolorAddFriendsTab
 * @author krystalskullofficial
-* @version 2.0
-* @description Recolors the Add Friends Tab on discord *(because being able to add people isnt that important)*
+* @version 2.1
+* @description Recolors the Add Friends tab on Discord
 */
-[data-tab-id=ADD_FRIEND]{
+
+/* Target Add Friend tab reliably */
+[role="tab"][aria-label="Add Friend"] {
     background-color: var(--background-color) !important;
     color: var(--interactive-normal) !important;
 }
-[data-tab-id=ADD_FRIEND]:hover{
+
+/* Hover */
+[role="tab"][aria-label="Add Friend"]:hover {
     background-color: var(--background-modifier-hover) !important;
     color: var(--interactive-hover) !important;
 }
-[data-tab-id=ADD_FRIEND][aria-selected=true]{
+
+/* Selected */
+[role="tab"][aria-selected="true"][aria-label="Add Friend"] {
     background-color: var(--background-modifier-selected) !important;
     color: var(--interactive-active) !important;
 }
-[data-tab-id=ADD_FRIEND][aria-selected=true]:hover{
+
+/* Selected + hover */
+[role="tab"][aria-selected="true"][aria-label="Add Friend"]:hover {
     background-color: var(--background-modifier-hover) !important;
     color: var(--interactive-active) !important;
 }
+
+
 /* Make Delete/Logout Buttons Red */
 [class^=item_][data-tab-id="DELETE"],
 [class^=item_][data-tab-id="logout"] {
