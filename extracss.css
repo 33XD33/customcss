@@ -22,13 +22,8 @@
 * @version 1.0
 * @description Hides the new pinned Discovery Icon
 */
-[class*=unreadMentionsFixedFooter_]{bottom: 0px !important;}
-[class^=footer_]
-{display: none; }
-div.listItem__650eb:has(div[aria-label="Explore Discoverable Servers"]), 
-div.tutorialContainer__650eb:has(div[data-list-item-id="guildsnav___create-join-button"]) 
-{display: none !important;
-}
+div[class^="_650eb104245d257b-tutorialContainer"] { display: none; }
+._650eb104245d257b-tutorialContainer + ._650eb104245d257b-listItem {display: none;}
 
 
 /*Support icon in toolbar*/
