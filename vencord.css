@@ -1,4 +1,6 @@
-import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
+@import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extracss.css");
+
+
 
 /* --Improved User Area-- */
 /* Make both the username and status message visible at all times. */
@@ -206,3 +208,11 @@ textarea::placeholder,
 ._85643a485899904b-button:nth-of-type(1) {
     display: none;
 }
+
+
+
+
+
+
+
+
