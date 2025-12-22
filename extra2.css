@@ -189,3 +189,20 @@ a:has([d^="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98"]),
 nav > ul:has(> div[data-settings-sidebar-item="nitro_panel"]) {
     display: none;
 }
+
+
+/* 1. Hide the Banner Image Container */
+[class*="sidebarList"]:has([data-has-banner="true"]) [class*="animatedContainer"] {
+    display: none !important;
+}
+
+/* 2. Remove the empty space/gap at the top of the channel list */
+[class*="sidebarList"]:has([data-has-banner="true"]) [class*="content"] > div[style*="height"] {
+    display: none !important;
+}
+
+/* Boost goals */
+div[class*="container"][class*="containerWithMargin"]:has([aria-label*="Boost Goal"]),
+div[class*="_0d0f9ddd12a3ace3"] {
+    display: none !important;
+}
