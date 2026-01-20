@@ -43,15 +43,13 @@
 ._37e49614b9f110a9-avatarWrapper ._37e49614b9f110a9-avatar{
   margin-left: 10px;
 }
-/* hide menus next to mute and deafen buttons */
-div[class^=micButtonParent__] {
-  button[role="switch"] {
-    border-radius: var(--radius-sm) !important;
-    
-    ~ button {
-      display: none;
-    }
-  }
+/* Hide menus next to mute & deafen buttons (class-name safe) */
+button[role="switch"]:has(svg) {
+  border-radius: var(--radius-sm) !important;
+}
+
+button[role="switch"]:has(svg) ~ button {
+  display: none !important;
 }
 
 
@@ -108,50 +106,33 @@ textarea::placeholder,
 }
 
 
-/* Search Bar Compact */
-    ._9293f6b2fc12398a-upperContainer ._9293f6b2fc12398a-toolbar ._496769951eb140fe-search { /* Re-Iconify Search */
-        order: -1;
-        ._974928fe84ca9647-searchBar { /* Make the default state only show an icon that can be clicked. */
-            transition: all ease 0.3s;
-            width: 25px;
-            box-sizing: unset;
-            cursor: pointer;
-            background: none;
-            border: none;
-            padding: 0;
-            ._974928fe84ca9647-icon {
-                height: 32px;
-                width: 32px;
-                scale: 1.2;
-                cursor: pointer;
-            }
-        }
-        ._974928fe84ca9647-focused ._974928fe84ca9647-searchBar, ._974928fe84ca9647-open ._974928fe84ca9647-searchBar { /* Expand the search bar when focused, and keep it expanded when text is entered. These classes make it really easy, thanks discord! */
-            width: 225px;
-            box-sizing: border-box;
-            cursor: text;
-            background: var(--background-gradient-low, var(--input-background));
-            border: 1px solid var(--input-border);
-            padding: 2px 0;
-            ._974928fe84ca9647-icon {
-                height: 24px;
-                width: 24px;
-                scale: 1;
-                cursor: pointer;
-            }
-        }
-    }
+/* Compact Search */
+[class$="-search"] > [class$="-searchBar"] {
+    width: 32px !important;
+    background: none;
+    border-color: transparent;
+    transition: background .25s ease,
+        width .25s ease,
+        border-color .25s ease;
+}
 
+[class$="-search"] > [class$="-searchBar"] .DraftEditor-root {
+    padding-right: 3px !important;
+}
 
-/* PinDMs Fixes */
-.vc-pindms-section-container {
-    text-transform: unset !important;
-    font-family: var(--font-primary);
-    font-size: 14px;
-    font-weight: 500;
-    color: rgb(161, 161, 161)!important;
-    /* V Uncomment this line to use the default category color. */
-    /* color: var(--channels-default) !important; */
+[class$="focused"] > [class$="-searchBar"],
+[class$="open"] > [class$="-searchBar"] {
+    width: 244px !important;
+    background: var(--background-gradient-low, var(--input-background-default));
+    border-color: var(--input-border-default);
+}
+
+[class$="-search"] > [class$="-searchBar"] [class$="iconLayout"] {
+    margin-right: 7px;
+}
+
+[class$="-search"] {
+    margin: 0 !important;
 }
 
 
@@ -205,9 +186,8 @@ textarea::placeholder,
 
 
 
-._85643a485899904b-button:nth-of-type(1) {
-    display: none;
-}
+
+
 
 
 
