@@ -64,7 +64,8 @@
     > svg > mask > use[href*="lower"] {
         display: none;
     }
-}
+
+
 /* Server Tooltop and Entire Server Text */
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
     max-width: unset !important; /* allow it to be larger */ }
@@ -84,6 +85,7 @@ div[aria-label="User Profile Modal"] {
         border-radius: 100px!important;
     }
 }
+
 /* Yapping Text */
 .typingDots_b88801>.ellipsis_b88801+.text_b88801 {
   font-size: 0;
@@ -110,6 +112,7 @@ div[aria-label="User Profile Modal"] {
 }
     .icon_f34534.folderPreviewGuildIcon__48112 { border-radius: 50% !important 
 }
+
 /* Transparent Folders Left */
 .folderPreview__48112 {
     box-sizing: border-box;
@@ -166,7 +169,6 @@ nav[class*="privateChannels" i] [aria-label="Nitro" i] {
     display: none !important;
 }
 
-
 /* Hide Find or start a conversation */
 div[class^="searchBar_e6b769"] { display: none; }
 div[class^="sectionDivider_e6b769"] { display: none; }
@@ -177,19 +179,16 @@ a:has([d^="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98"]),
   display: none;
 }
 
-
 /* Hide Active Now section */
 [class*="nowPlayingColumn"],
 [class*="activeNow"] {
     display: none !important;
 }
 
-
 /* Hides Nitro Panel in Settings */
 nav > ul:has(> div[data-settings-sidebar-item="nitro_panel"]) {
     display: none;
 }
-
 
 /* 1. Hide the Banner Image Container */
 [class*="sidebarList"]:has([data-has-banner="true"]) [class*="animatedContainer"] {
