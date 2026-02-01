@@ -66,6 +66,7 @@
     > svg > mask > use[href*="lower"] {
         display: none;
     }
+}
 
 /* Server Tooltop and Entire Server Text */
 [class^=tooltip] /* Allow the server tooltip to fit the entire server name in one line */ {
