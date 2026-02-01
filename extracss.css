@@ -26,10 +26,8 @@ li button[aria-label="Shop"] {
   display: none !important;
 }
 
-
 /* Disable Join Server and Discovery Icon */
 .tutorialContainer__650eb, .tutorialContainer__650eb + .listItem__650eb {display: none;}
-
 
 /*Support icon in toolbar*/
 .toolbar__9293f .anchor_edefb8[href="https://support.discord.com"],
@@ -41,7 +39,6 @@ path[d^="M14.5 8a3 3 0 1 0-2.7-4.3c-.2.4.06.86.44 1.12a5"],
 path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none; 
 }
 
-
 /* Remove Activty Button*/
 .buttonContainer__1405b {
   display: none;
@@ -50,24 +47,20 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 .tutorialContainer__650eb+div{display: none;
 }
 
-
 /* Remove Share Screen Left*/
 .actionButtons_e131a9 {
  display: none;
 }
 
-
-/* Flip Camera */
-.mirror__48b20 {
-    transform: scaleX(1);
+/* Top Left Arrows */
+.backForwardButtons__63abb  {
+    display: none !important;
 }
-
 
 /* Hide Noise Suppression Icon In Call*/
 .button__67645:has(path[d^=" M0,-5 C0,-5 0,-5 0,-5 C0.5519999861717224"]){
   display: none
 }
-
 
 /* Enables 3D transformations */
 -79,363 +79,3 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
@@ -127,7 +120,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
   scale: 1;
 }
 
-  
 /**
 * @name RecolorAddFriendsTab
 * @author krystalskullofficial
@@ -158,7 +150,6 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
     background-color: var(--background-modifier-hover) !important;
     color: var(--interactive-active) !important;
 }
-
 
 /* Make Delete/Logout Buttons Red */
 [class^=item_][data-tab-id="DELETE"],
