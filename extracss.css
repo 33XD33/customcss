@@ -1,6 +1,5 @@
 /*Extra Person CSS*/
 
-
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/chatuserarea.css");
 @import url("https://raw.githubusercontent.com/33XD33/customcss/refs/heads/main/extra2.css");
 
@@ -58,13 +57,6 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
 }
 
 
-/* Add "@" before Username */
-[class*=userTag_] [class*=userTagUsername_]:before {
-  color: white(--text-muted);
-  content: "@";
-}
-
-
 /* Flip Camera */
 .mirror__48b20 {
     transform: scaleX(1);
@@ -93,6 +85,7 @@ path[d^="M4 4a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h11a3"]){ display: none;
         transform: rotateY(360deg) scale(1.5);
     }
 }
+
 /* Call Icon Buttons */
 .wrapper__1405b button{
     background-color: rgba(197, 197, 197, 0.685) !important; 
@@ -183,7 +176,7 @@ div:not([class]):has(.basicChannelRowLink__2ea32) {
 .bottomControls_bfe55a > .flex__7c0ba:nth-child(2) {
   flex: 0 1 auto !important;
 }
+
 /* Don't show Chat Apps   */
 .visual-refresh .channelAppLauncher_e6e74f, .trailing_c38106 [href="https://support.discord.com"]{display: none;
 }
-
