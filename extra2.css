@@ -206,3 +206,8 @@ div[class*="container"][class*="containerWithMargin"]:has([aria-label*="Boost Go
 div[class*="_0d0f9ddd12a3ace3"] {
     display: none !important;
 }
+
+/* Top Left Arrows */
+.backForwardButtons__63abb  {
+    display: none !important;
+}
