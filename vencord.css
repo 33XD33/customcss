@@ -63,17 +63,17 @@ button[role="switch"]:has(svg) ~ button {
 }
 
 [href="/channels/@me"]::after {
-  content: "home　　　　　　　　　　";
+  content: "Home　　　　　　　　　　";
   line-height: 80px;
   font-weight: 290;
-  font-size: 32px; 
+  font-size: 30px; 
   letter-spacing:3px;
-  font-family: Doto;
+  font-family: Old London;
   color: rgb(255, 255, 255);
   /* color:  black */
   visibility: visible;
   position: absolute;
-  left: 6px;
+  left: 10px;
 }
 
 
@@ -89,7 +89,7 @@ textarea::placeholder,
 
 /* Custom Discord icon using image */
 .childWrapper__6e9f8>svg {
-  background-image: url("https://i.imgur.com/8sBeWwt.png");
+  background-image: url("https://i.imgur.com/w55Moxr.png");
   background-size: contain!important;
   width: 30px!important;
   height: 30px!important;
