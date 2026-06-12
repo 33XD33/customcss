@@ -105,6 +105,41 @@ textarea::placeholder,
 }
 
 
+/* Re-Iconify Search from Aurora (@r3dgh0stp4wz ) */
+.search__49676 {
+    order: -1;
+    margin-left: 0px;
+    margin-right: 5px;
+    max-width: unset;
+    width: unset;
+    .searchBar_c322aa {
+        background: transparent;
+        /* Make the default state only show an icon that can be clicked. */
+        transition: all ease 0.3s;
+        width: 28px;
+        border: none;
+        padding: 0px;
+        .icon_c322aa {
+            cursor: pointer;
+            margin-inline-end: 2px;
+            scale: 1.2;
+        }
+        .public-DraftEditorPlaceholder-inner {
+            display: none;
+        }
+    }
+    .search_c322aa.open_c322aa .searchBar_c322aa {
+        /* Expand the search bar when focused, and keep it expanded when text is entered. */
+        width: 225px;
+        box-sizing: border-box;
+        cursor: text;
+        background: var(--input-background-default);
+        border: 2px solid var(--border-active);
+        padding: 2px 0px;
+    }
+}
+
+
 /* Extra Settings */
 :root {
     --\\--compact-title-bar: true;
